@@ -49,13 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 defaultRoom = roomInput.value
                 defaultAdult = adultInput.value
                 defaultChild = childInput.value
-                defaultType = objStep2RoomInfo.type
-                defaultNum = objStep2RoomInfo.num
                 roomNum=roomInput.value;
                 childNum=childInput.value;
                 adultNum=adultInput.value;
-                onlyType=objStep2RoomInfo.type;
-                valueNum=objStep2RoomInfo.num;
+                if(step2RoomInfo) {
+                    defaultType = objStep2RoomInfo.type
+                    defaultNum = objStep2RoomInfo.num
+                    onlyType=objStep2RoomInfo.type;
+                    valueNum=objStep2RoomInfo.num;
+                }
             }
 
             document.cookie = `defaultStartDate=${defaultStartDate}`
@@ -63,8 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
             document.cookie = `defaultRoom=${defaultRoom}`
             document.cookie = `defaultAdult=${defaultAdult}`
             document.cookie = `defaultChild=${defaultChild}`
-            document.cookie = `defaultType=${defaultType}`
-            document.cookie = `defaultNum=${defaultNum}`
+            if(step2RoomInfo) {
+                document.cookie = `defaultType=${defaultType}`
+                document.cookie = `defaultNum=${defaultNum}`
+            }
 
             // [↓] step1 객실 수, 성인 수, 어린이 수 증감
             plusBtn.forEach((v,i)=>{
@@ -325,8 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 // 배열을 JSON 문자열로 변환하여 쿠키에 저장
                 document.cookie = `roomInfo=${JSON.stringify(selectedRooms)}; path=/;`;
         
-                // 선택된 방의 수를 콘솔에 출력하여 디버깅
-                console.log('roomBtnSelected:', roomBtnSelected, 'selectedRooms:', selectedRooms);
             }
         
 
@@ -334,41 +336,44 @@ document.addEventListener("DOMContentLoaded", () => {
                 const step2RoomData = JSON.parse(localStorage.getItem('room'));
 
                 // 해당 roomType과 roomNum을 추출
-                const step2RoomType = step2RoomData.type;
-                const step2RoomNum = step2RoomData.num;
+                if (step2RoomInfo) {
+                    step2RoomType = step2RoomData.type;
+                    step2RoomNum = step2RoomData.num;
 
-                // 모든 li 요소를 순회하면서 조건에 맞는 요소를 찾음
-                document.querySelectorAll('li').forEach(li => {
-                    const roomValueNumElement = li.querySelector('.room_value_num');
-                    const tagTypeElement = li.querySelector('.tag');
-
-                    // roomValueNumElement와 tagTypeElement가 존재하는지 확인
-                    if (roomValueNumElement && tagTypeElement) {
-                        const roomValueNum = roomValueNumElement.textContent.replace('호', '');
-                        const tagType = tagTypeElement.classList.contains(step2RoomType);
-
-                        // roomNum과 roomType이 일치하는지 확인
-                        if (roomValueNum === step2RoomNum && tagType) {
-                            // 일치하는 요소의 room_select_btn에 selected 클래스 추가
-                            const roomSelectBtn = li.querySelector('.room_select_btn');
-                            if (roomSelectBtn) {
-                                roomSelectBtn.classList.add('selected');
-                                
-                                // 이미 selected 상태일 경우 배열에 추가
-                                const roomPrice = li.querySelector('.room_price').textContent;
-                                const roomInfo = {
-                                    price: roomPrice,
-                                    type: tagTypeElement.className,
-                                    valueNum: roomValueNum
-                                };
-                                selectedRooms.push(roomInfo);
-                                roomBtnSelected = selectedRooms.length; // 선택된 방의 수 업데이트
-                                defaultPrice = parseInt(roomPrice) * 1000;
-                                document.cookie = `defaultPrice=${defaultPrice}`
+                    // 모든 li 요소를 순회하면서 조건에 맞는 요소를 찾음
+                    document.querySelectorAll('li').forEach(li => {
+                        const roomValueNumElement = li.querySelector('.room_value_num');
+                        const tagTypeElement = li.querySelector('.tag');
+    
+                        // roomValueNumElement와 tagTypeElement가 존재하는지 확인
+                        if (roomValueNumElement && tagTypeElement) {
+                            const roomValueNum = roomValueNumElement.textContent.replace('호', '');
+                            const tagType = tagTypeElement.classList.contains(step2RoomType);
+    
+                            // roomNum과 roomType이 일치하는지 확인
+                            if (roomValueNum === step2RoomNum && tagType) {
+                                // 일치하는 요소의 room_select_btn에 selected 클래스 추가
+                                const roomSelectBtn = li.querySelector('.room_select_btn');
+                                if (roomSelectBtn) {
+                                    roomSelectBtn.classList.add('selected');
+                                    
+                                    // 이미 selected 상태일 경우 배열에 추가
+                                    const roomPrice = li.querySelector('.room_price').textContent;
+                                    const roomInfo = {
+                                        price: roomPrice,
+                                        type: tagTypeElement.className,
+                                        valueNum: roomValueNum
+                                    };
+                                    selectedRooms.push(roomInfo);
+                                    roomBtnSelected = selectedRooms.length; // 선택된 방의 수 업데이트
+                                    defaultPrice = parseInt(roomPrice) * 1000;
+                                    document.cookie = `defaultPrice=${defaultPrice}`
+                                }
                             }
                         }
-                    }
-                });
+                    });
+                }
+
             
             // [↓] step1 정보 입력 버튼 (다음페이지로 넘어가는 버튼)
             nextBtn.addEventListener("click", (e) => {
@@ -403,8 +408,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const paymentBtn = document.querySelector(".payment_btn.member")
             
         if (step2) {
-            onlyType=objStep2RoomInfo.type;
-            valueNum=objStep2RoomInfo.num;
+            if(step2RoomInfo) {
+                onlyType=objStep2RoomInfo.type;
+                valueNum=objStep2RoomInfo.num;
+            }
             cardAllInput.forEach((v,i)=>{
                 if(v.classList.contains("card_cvc")){
                     cardCvcInput.addEventListener("focus", ()=>{
@@ -553,7 +560,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         roomInfoArray.forEach((v, i) => {
                             let primaryPrice = parseInt(roomInfoArray[i].price) * 1000;
                             totalPrimaryPrice += primaryPrice;
-                            console.log(roomInfoArray[i].price);
                         });
                         primary.innerHTML += totalPrimaryPrice;
                         sale.innerHTML += totalPrimaryPrice * 0.8;
