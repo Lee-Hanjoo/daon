@@ -1,0 +1,1014 @@
+.reservation_common .sub_container .contents .step_wrap .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservation_common .sub_container .contents .step_wrap .step li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.reservation_common .sub_container .contents .step_wrap .step li:not(:last-of-type) {
+  margin-right: 120px;
+  position: relative;
+}
+.reservation_common .sub_container .contents .step_wrap .step li:not(:last-of-type) .circle::after {
+  content: "";
+  width: 120px;
+  display: inline-block;
+  border: dashed 1px #afafaf;
+  position: absolute;
+  left: 64px;
+  top: 32px;
+  z-index: 1;
+}
+.reservation_common .sub_container .contents .step_wrap .step li:not(:last-of-type) .circle + p {
+  white-space: nowrap;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.active .circle {
+  background-color: #2f2f2f;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.active ~ li .circle + p {
+  color: #efefef;
+  white-space: nowrap;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.complete .circle {
+  cursor: pointer;
+  background-color: #357EF1;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.complete .circle::after {
+  border-color: #357EF1;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.complete .circle + p {
+  color: #357EF1;
+  opacity: 0.5;
+}
+.reservation_common .sub_container .contents .step_wrap .step li.complete .circle span {
+  display: block;
+  color: transparent;
+  background: url("../img/icon/icon_check_white.svg") no-repeat center;
+}
+.reservation_common .sub_container .contents .step_wrap .step li .circle {
+  width: 64px;
+  height: 64px;
+  display: block;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  background-color: #efefef;
+  text-align: center;
+  border-radius: 50%;
+  cursor: default;
+  z-index: 2;
+}
+.reservation_common .sub_container .contents .step_wrap .step li .circle span {
+  font-weight: 700;
+  color: #fff;
+  line-height: 48px;
+}
+.reservation_common .sub_container .contents .step_wrap .step li p {
+  margin-top: 8px;
+}
+.reservation_common .sub_container .contents .next_wrap {
+  margin-top: 48px;
+  border-top: 1px solid #efefef;
+  position: relative;
+}
+.reservation_common .sub_container .contents .next_wrap .next_btn {
+  width: 200px;
+  height: 60px;
+  padding-left: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f2f2f;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.reservation_common .sub_container .contents .next_wrap .next_btn::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  background: url("../img/icon/icon_arrow.svg") no-repeat center/24px;
+}
+.reservation_common .sub_container .contents .toastui-calendar-weekday .toastui-calendar-grid-selection {
+  border-radius: 999px;
+}
+.reservation_common .sub_container .contents .toastui-calendar-weekday .toastui-calendar-grid-selection:first-of-type, .reservation_common .sub_container .contents .toastui-calendar-weekday .toastui-calendar-grid-selection:last-of-type {
+  background-color: rgba(81, 92, 230, 0.1);
+}
+
+.step1 .sub_container .contents .data_area .date_person {
+  margin: 80px 0;
+  padding: 64px 0;
+  border: 1px solid #efefef;
+  border-left: transparent;
+  border-right: transparent;
+  display: flex;
+  align-items: center;
+}
+.step1 .sub_container .contents .data_area .date_person li:not(:first-of-type) {
+  margin-left: 100px;
+}
+.step1 .sub_container .contents .data_area .date_person li.data {
+  width: calc(100% + 20px);
+}
+.step1 .sub_container .contents .data_area .date_person li.data .input_wrap {
+  width: 100%;
+}
+.step1 .sub_container .contents .data_area .date_person li.data .input_wrap input {
+  width: 100%;
+  text-align: left;
+}
+.step1 .sub_container .contents .data_area .date_person li.room {
+  margin-left: auto;
+}
+.step1 .sub_container .contents .data_area .date_person li .label {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap input {
+  width: 126px;
+  height: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .date {
+  width: 164px;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .date input {
+  color: #2f2f2f;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .date .tui-datepicker-input {
+  height: auto;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .date span {
+  margin-top: 0;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .date + .sign {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap {
+  width: 126px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap button {
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/icon_minus.svg") no-repeat center;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap button.minus {
+  opacity: 0.3;
+}
+.step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap button.plus {
+  left: auto;
+  right: 0;
+  background-image: url("../img/icon/icon_plus.svg");
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li {
+  display: flex;
+  align-items: center;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li:not(:first-of-type) {
+  margin-top: 64px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_img {
+  width: 480px;
+  height: 320px;
+  margin-right: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info {
+  width: calc(100% - 480px);
+  position: relative;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name .tag {
+  padding: 8px 16px;
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 700;
+  border: 2px solid #BE004F;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name .tag.love {
+  color: #BE004F;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name .tag.only {
+  border-color: #3226C1;
+  color: #3226C1;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name .room_value_num {
+  font: inherit;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name .room_price {
+  margin-left: 4px;
+  color: #afafaf;
+  font-weight: 600;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul {
+  padding: 38px 40px;
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 20px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul li:not(:first-of-type) {
+  margin-top: 20px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul li p {
+  display: flex;
+  align-items: center;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul li p span {
+  display: block;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap {
+  position: absolute;
+  right: 40px;
+  bottom: 28px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap .room_select_btn {
+  padding: 12px 24px;
+  background-color: #afafaf;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap .room_select_btn.selected {
+  background-color: #2f2f2f;
+}
+.step1 .sub_container .contents .data_area .room_list_wrap + .room_list_wrap {
+  margin-top: 64px;
+}
+
+.step2 .sub_container .contents .info_wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.step2 .sub_container .contents .info_wrap .left {
+  width: calc(64% - 20px);
+  display: block;
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid #efefef;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info {
+  margin-bottom: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #efefef;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li:not(:first-of-type) {
+  margin-top: 24px;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li.tel_wrap > div {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li.tel_wrap > div input {
+  width: calc(100% - 120px);
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li.tel_wrap > div button {
+  width: 112px;
+  margin-left: 8px;
+  padding: 16px 0;
+  background-color: #357EF1;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li.textarea_wrap {
+  width: 100%;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li .label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li input.card_name {
+  text-transform: uppercase;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li select {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+  background: url("../img/icon/icon_arrow_down.svg") no-repeat right 16px center/20px;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li .input_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li .input_wrap .first, .step2 .sub_container .contents .info_wrap .left .user_info .input_list li .input_wrap .month {
+  width: calc(40% - 4px);
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .input_list li .input_wrap .last, .step2 .sub_container .contents .info_wrap .left .user_info .input_list li .input_wrap .year {
+  width: calc(60% - 4px);
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .card_wrap .input_list li.half {
+  justify-content: flex-start;
+}
+.step2 .sub_container .contents .info_wrap .left .user_info .card_wrap .input_list li.half > div:last-of-type {
+  width: 20%;
+  margin-left: 20px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #efefef;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box {
+  width: 100%;
+  height: 368px;
+  margin-bottom: 40px;
+  background-color: #efefef;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card {
+  width: 400px;
+  height: 240px;
+  position: relative;
+  transform: perspective(800px) rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #2f2f2f;
+  border-radius: 16px;
+  border: 4px solid #D6B46C;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0s ease 0.2s;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front > p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 40px;
+  background: url("../img/icon/icon_sim.svg") no-repeat center;
+  position: absolute;
+  left: 40px;
+  top: 64px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data .name_wrap {
+  width: calc(100% - 52px);
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data .date_wrap {
+  width: 56px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data .date_wrap span {
+  margin: 0 4px 0 2px;
+  color: #fff;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data p {
+  color: #fff;
+  letter-spacing: 0;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data p.num {
+  height: 30px;
+  margin-top: 84px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data p.name {
+  text-transform: uppercase;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data p.name.last {
+  margin-left: 4px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_front .card_data p.date {
+  width: -moz-fit-content;
+  width: fit-content;
+  left: auto;
+  right: 40px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_back {
+  opacity: 0;
+  position: relative;
+  transform: rotateY(180deg);
+  z-index: 1;
+  transition: all 0s ease 0.2s;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_back::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #afafaf;
+  position: absolute;
+  left: 0;
+  top: 32px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card > div.card_back p {
+  width: 50%;
+  height: 32px;
+  padding: 4px 20px;
+  position: absolute;
+  left: 32px;
+  top: 96px;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #2f2f2f;
+  background-color: #efefef;
+  border-radius: 999px;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card.on {
+  transform: perspective(800px) rotateY(180deg);
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card.on > div.card_front {
+  opacity: 0;
+  z-index: 1;
+}
+.step2 .sub_container .contents .info_wrap .left .card_wrap .card_box .card.on > div.card_back {
+  opacity: 1;
+  z-index: 2;
+}
+.step2 .sub_container .contents .info_wrap .right {
+  width: calc(36% - 20px);
+  margin-top: 56px;
+}
+.step2 .sub_container .contents .info_wrap .right .sticky_menu {
+  position: sticky;
+  right: 0;
+  top: 56px;
+}
+.step2 .right_mb_info, .step2 .right_mb_menu {
+  display: none;
+}
+.step2 .data_list {
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 1px solid #efefef;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.05);
+}
+.step2 .data_list li .label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.step2 .data_list li .data {
+  font-size: 20px;
+  font-weight: 700;
+}
+.step2 .data_list li .data #tag, .step2 .data_list li .data #mb_tag {
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #2f2f2f;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.step2 .data_list li .data #tag.love, .step2 .data_list li .data #mb_tag.love {
+  background-color: #BE004F;
+}
+.step2 .data_list li .data #tag.only, .step2 .data_list li .data #mb_tag.only {
+  background-color: #3226C1;
+}
+.step2 .data_list li .data #room_num, .step2 .data_list li .data span, .step2 .data_list li .data em {
+  font: inherit;
+}
+.step2 .data_list li .data .room_data {
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 16px;
+}
+.step2 .data_list li .data .room_data #room_data, .step2 .data_list li .data .room_data #mb_room_data {
+  color: inherit;
+  font: inherit;
+}
+.step2 .data_list li .data.room_tag_num, .step2 .data_list li .data.mb_room_tag_num {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.step2 .data_list li .data.room_tag_num > span:not(:nth-of-type(odd)), .step2 .data_list li .data.mb_room_tag_num > span:not(:nth-of-type(odd)) {
+  margin-left: 20px;
+}
+.step2 .data_list li .data.room_tag_num {
+  max-width: 270px;
+}
+.step2 .data_list li .data.mb_room_tag_num {
+  max-width: 260px;
+  justify-content: flex-end;
+}
+.step2 .data_list li .data #mb_room_num_value {
+  display: inline-block;
+  width: 56px;
+}
+.step2 .data_list li:not(:first-of-type) {
+  margin-top: 32px;
+}
+.step2 .price_wrap {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.step2 .price_wrap > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.step2 .price_wrap .price {
+  text-align: right;
+}
+.step2 .price_wrap .price #primary {
+  font-size: 20px;
+  color: #afafaf;
+  text-decoration: line-through;
+}
+.step2 .price_wrap .price p {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.step2 .price_wrap .price p::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  background: url("../img/icon/icon_krw.svg") no-repeat center;
+}
+.step2 .payment_btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2f2f2f;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.step2 .payment_btn_wrap .payment_btn {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.step2 .payment_btn_wrap .payment_btn.member {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.step3 .sub_container .contents .complete_wrap {
+  text-align: center;
+}
+.step3 .sub_container .contents .complete_wrap .img_wrap {
+  width: 80px;
+  height: 80px;
+  margin: 82px auto 64px;
+}
+.step3 .sub_container .contents .complete_wrap .txt_wrap {
+  margin-bottom: 80px;
+}
+.step3 .sub_container .contents .complete_wrap .txt_wrap p strong {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.step3 .sub_container .contents .complete_wrap .txt_wrap p strong span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+.step3 .sub_container .contents .complete_wrap .txt_wrap p span {
+  font-size: 24px;
+  line-height: 36px;
+}
+.step3 .sub_container .contents .complete_wrap .btn_wrap {
+  font-size: 0;
+}
+.step3 .sub_container .contents .complete_wrap .btn_wrap button {
+  width: 240px;
+  padding: 16px 0;
+  text-align: center;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.step3 .sub_container .contents .complete_wrap .btn_wrap button:not(:first-of-type) {
+  margin-left: 12px;
+}
+.step3 .sub_container .contents .complete_wrap .btn_wrap button.main {
+  color: #afafaf;
+}
+.step3 .sub_container .contents .complete_wrap .btn_wrap button.reservation {
+  border-color: #357EF1;
+  background-color: #357EF1;
+  color: #fff;
+}
+
+.look .sub_top {
+  background-image: url("../img/img_sub6_reservation_look.jpg");
+}
+.look .sub_container .contents .btn_wrap {
+  text-align: center;
+}
+.look .sub_container .contents .btn_wrap button {
+  width: 240px;
+  padding: 16px 0;
+  text-align: center;
+  border: 2px solid #2f2f2f;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #2f2f2f;
+}
+.look .sub_container .contents .btn_wrap button:not(:first-of-type) {
+  margin-left: 12px;
+}
+.look .sub_container .contents .btn_wrap button.member:not(.not) {
+  background-color: #2f2f2f;
+  border-color: #2f2f2f;
+  color: #fff;
+}
+
+.popup.non_member .label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.popup.non_member input {
+  width: calc(100% - 88px);
+  padding: 16px 20px;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+}
+.popup.non_member button {
+  width: 76px;
+  padding: 16px 20px;
+  margin-left: 8px;
+  background-color: #afafaf;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.popup.non_member button:hover {
+  background-color: #357EF1;
+}
+
+@media (max-width: 1279px) {
+  .reservation_common .sub_container .contents .step_wrap .step li:not(:last-of-type) {
+    margin-right: 100px;
+  }
+  .reservation_common .sub_container .contents .step_wrap .step li:not(:last-of-type) .circle::after {
+    width: 100px;
+    left: 62px;
+    top: 28px;
+  }
+  .reservation_common .sub_container .contents .step_wrap .step li .circle {
+    width: 56px;
+    height: 56px;
+    border-width: 6px;
+  }
+  .reservation_common .sub_container .contents .step_wrap .step li .circle span {
+    line-height: 44px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li:not(:first-of-type, .room) {
+    margin-left: 64px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .label {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap input {
+    width: 100px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap {
+    width: 100px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul {
+    padding: 32px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info ul li:not(:first-of-type) {
+    margin-top: 16px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap {
+    right: 0;
+    bottom: auto;
+    top: 2px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap .room_select_btn {
+    padding: 8px 16px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_name {
+    font-size: 20px;
+  }
+  .step2 .sub_container .contents .info_wrap .right .sticky_menu .data_list {
+    padding: 32px;
+  }
+  .step3 .sub_container .contents .complete .txt_wrap p strong {
+    font-size: 28px;
+  }
+  .step3 .sub_container .contents .complete .txt_wrap p strong span {
+    margin-top: 12px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .step3 .sub_container .contents .complete .txt_wrap p > span {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 1088px) {
+  .step1 .sub_container .contents .data_area .room_list_wrap > li {
+    flex-direction: column;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap > li .room_img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap > li .room_info {
+    width: 100%;
+  }
+  .step1 .sub_container .contents .data_area .room_list_wrap > li .room_info .room_btn_wrap {
+    top: auto;
+    right: 32px;
+    bottom: 26px;
+  }
+  .step2 {
+    position: relative;
+  }
+  .step2 .sub_container {
+    padding-bottom: 0;
+  }
+  .step2 .sub_container .contents .info_wrap .left {
+    width: 100%;
+  }
+  .step2 .sub_container .contents .info_wrap .right {
+    display: none;
+  }
+  .step2 .right_mb_menu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 80px;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  .step2 .right_mb_menu > div {
+    width: 200px;
+  }
+  .step2 .right_mb_menu > div:first-of-type {
+    width: calc(100% - 224px);
+    max-width: 320px;
+  }
+  .step2 .right_mb_menu .payment_btn_wrap {
+    border: none;
+    justify-content: flex-end;
+  }
+  .step2 .right_mb_menu .payment_btn_wrap .payment_btn {
+    width: 100px;
+    padding: 12px 0;
+    font-size: 14px;
+    border: 1px solid #2f2f2f;
+  }
+  .step2 .right_mb_menu .payment_btn_wrap .payment_btn:first-of-type {
+    border-radius: 8px 0 0 8px;
+  }
+  .step2 .right_mb_info {
+    display: block;
+    width: calc(100% + 160px);
+    margin: 80px 0 0 -80px;
+    padding: 40px 80px;
+    border-top: 8px solid #efefef;
+  }
+  .step2 .right_mb_info .data_list {
+    padding: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+  }
+  .step2 .right_mb_info .data_list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .step2 .right_mb_info .data_list li:not(:first-of-type) {
+    margin-top: 8px;
+  }
+  .step2 .right_mb_info .data_list li > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .step2 .right_mb_info .data_list li .label {
+    margin-bottom: 0;
+  }
+  .step2 .right_mb_info .data_list li .data .room {
+    margin-left: 12px;
+    color: #afafaf;
+  }
+  .step2 .right_mb_info .data_list li .data #tag {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+  .step2 .right_mb_info .data_list li .data .room_tag_num {
+    justify-content: flex-end;
+  }
+  .step2 .price_wrap {
+    display: block;
+    margin-bottom: 0;
+  }
+  .step2 .price_wrap .price {
+    text-align: left;
+  }
+  .step2 .price_wrap .price > p {
+    font-size: 24px;
+  }
+  .step2 .price_wrap .price > p::before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+  }
+  .step2 .price_wrap > p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .step1 .sub_container .contents .data_area .date_person li:not(:first-of-type, .room) {
+    margin-left: 24px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .label {
+    margin-bottom: 8px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap input {
+    font-size: 20px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap .date {
+    width: 140px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap .date + .sign {
+    font-size: 20px;
+    margin: 0 12px;
+  }
+}
+@media screen and (max-width: 863px) {
+  .step1 .sub_container .contents .data_area .date_person {
+    height: 248px;
+    flex-direction: column;
+    position: relative;
+    margin: 64px 0;
+    padding: 40px 0;
+  }
+  .step1 .sub_container .contents .data_area .date_person li {
+    margin-left: 0 !important;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap input {
+    width: 88px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li .input_wrap .btn_wrap {
+    width: 88px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li.data {
+    width: 100%;
+  }
+  .step1 .sub_container .contents .data_area .date_person li:not(.data) {
+    width: 88px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+  }
+  .step1 .sub_container .contents .data_area .date_person li:nth-last-of-type(2) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .step1 .sub_container .contents .data_area .date_person li:nth-last-of-type(1) {
+    left: auto;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .step2 .right_mb_info {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding: 40px 16px;
+  }
+  .step2 .right_mb_menu {
+    padding: 20px 16px;
+  }
+  .step2 .price_wrap {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 683px) {
+  .step2 .sub_container .contents .info_wrap .left .user_info .input_list li {
+    width: 100%;
+  }
+  .step2 .sub_container .contents .info_wrap .left .user_info .input_list li.half {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .step2 .sub_container .contents .info_wrap .left .user_info .input_list li.half > div {
+    width: 100%;
+  }
+  .step2 .sub_container .contents .info_wrap .left .user_info .input_list li.half > div:last-of-type {
+    width: 100% !important;
+    margin-top: 24px;
+    margin-left: 0 !important;
+  }
+  .step3 .sub_container .contents .complete .btn_wrap button {
+    width: calc(50% - 8px);
+  }
+  .step3 .sub_container .contents .complete .btn_wrap button.reservation {
+    margin-left: 8px;
+  }
+}
+@media screen and (max-width: 529px) {
+  .step1 .sub_container .contents .data_area .room_list_wrap li .room_info .room_btn_wrap {
+    right: 0;
+    bottom: auto;
+    top: 2px;
+  }
+  .look .sub_container .contents .btn_wrap {
+    font-size: 0;
+  }
+  .look .sub_container .contents .btn_wrap button {
+    width: calc(50% - 4px);
+  }
+  .look .sub_container .contents .btn_wrap button:last-of-type {
+    margin-left: 8px;
+  }
+}

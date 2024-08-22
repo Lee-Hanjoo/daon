@@ -1,0 +1,112 @@
+// 이용약관
+.policy_service {
+    .sub_top{
+        background: url("../img/img_sub_policy.jpg") no-repeat center / cover;
+        .dim{
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+    .sub_container {
+        .contents {
+            width: 100%;
+            .service_wrap{
+                width: 100%;
+                .service_article{
+                    .service_article_tit{
+                        margin-bottom: 16px;
+                        h3{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+                .service_article_txt{
+                    margin: 16px 36px 32px;
+                    ul{
+                        padding: 16px;
+                        border: 1px solid #AFAFAF;
+                        li{
+                            font-size: 16px;
+                            color: #2f2f2f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 개인정보처리방침
+.policy_privacy {
+    .sub_top{
+        background: url("../img/img_sub_policy.jpg") no-repeat center / cover;
+        .dim{
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+    .sub_container {
+        .contents{
+            .privacy_wrap{
+                .privacy_chapter{
+                    article{
+                        h3{
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #2F2F2F;
+                        }
+                        .privacy_chapter_table{
+                            width: 100%;
+                            border: 1px solid #2F2F2F;
+                            padding: 24px;
+                            margin: 24px 0 36px;
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                gap: 32px;
+                                li{
+                                    width: 280px;
+                                    a{
+                                        font-size: 18px;
+                                        color: #2F2F2F;
+                                        padding: 3px 0;
+                                        &:hover{
+                                            text-decoration: underline;
+                                            text-underline-position: under;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .privacy_info{
+                    margin-top: 16px;
+                    article{
+                        h3{
+                            font-size: 20px;
+                            font-weight: 700;
+                            color: #2F2F2F;
+                        }
+                        .privacy_info_cont{
+                            margin: 18px 0;
+                            padding: 0 8px;
+                            border-bottom: 1px dotted #AFAFAF;
+                            ul{
+                                li{
+                                    padding-bottom: 18px;
+                                    p{
+                                        font-size: 18px;
+                                        color: #2F2F2F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./res-policy";

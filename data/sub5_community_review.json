@@ -1,0 +1,209 @@
+{
+  "community_review" :[
+    {
+      "id":0,
+      "review_id" : "just_drink_v",
+      "review_text" : "엄청 쾌적해서 놀랬구, 하나하나 디테일이 너무 깔끔하구 이뻤던 곳",
+      "rating" : "5",
+      "influencer" : false
+    },
+    {
+      "id":1,
+      "review_id" : "star_jay",
+      "review_text" : "언제 가도 나에게 힐링을 주는 공간 힐링이 뭐 별거 있나요<br>내가 좋아하는 공간에서 좋은 사람들과 예쁜 것 보면서 맛있는거 먹으면 그게 힐링이지!!<br>이렇게 말하고 보니 좀 어려운거 같기도 하고 아닌거 같기도 하고?ㅎㅎ",
+      "rating" : "5",
+      "influencer" : true
+    },
+    {
+      "id":2,
+      "review_id" : "dongfamily5",
+      "review_text" : "사진 많이 찍고 바베큐도 먹고 불멍하면서 힐링 했어용 <br>붉은 빛, 푸른 빛 너무 예쁜 불멍 <br>올여름 가평 놀러 갈 예정이신 분들은 꼭 한번 방문해보시길 추천드립니당",
+      "rating" : "5",
+      "influencer" : false
+    },
+    {
+      "id":3,
+      "review_id" : "cis0207",
+      "review_text" : "간만에 가평 여행<br>숙소에서 한발자국도 안나가고 하루종일 친구들이랑 수영하고 맛난거 먹고,<br>영화보고",
+      "rating" : "5",
+      "influencer" : false
+    },
+    {
+      "id":4,
+      "review_id" : "jam.sera",
+      "review_text" : "사진 많이 찍고 고기도 먹고,<br>힐링시간도 가질 수 있는 숙소 랍니다",
+      "rating" : "5",
+      "influencer" : true
+    },
+    {
+      "id":5,
+      "review_id" : "lin",
+      "review_text" : "룸 컨디션도 좋고 뷰도 너뮤 이뻐서 기분조은",
+      "rating" : "4",
+      "influencer" : false
+    },
+    {
+      "id":6,
+      "review_id" : "qwer",
+      "review_text" : "사장님도 너무 친절하시고 좋았어요!<br>또 방문하고 싶은 곳",
+      "rating" : "2",
+      "influencer" : false
+    },
+    {
+      "id":7,
+      "review_id" : "asdf",
+      "review_text" : "바베큐도 너무 맛있고, 옥상 정원도 너무 이뻤던..",
+      "review_icon" : "./img/icon/icon_sub5_review_5star",
+      "rating" : "3",
+      "influencer" : false
+    },
+    {
+      "id":8,
+      "review_id" : "rean",
+      "review_text" : "가성비 갑! 펜션! 추천합니다!",
+      "rating" : "2",
+      "influencer" : false
+    },
+    {
+      "id":9,
+      "review_id" : "hong",
+      "review_text" : "깔끔한 실내와 숙소.. <br>첫날 숙소보다 훨씬 만족스러웠어요!",
+      "rating" : "3",
+      "influencer" : false
+    },
+    {
+      "id":10,
+      "review_id" : "yeong",
+      "review_text" : "가평에서의 1박 2일이 너무나도 짧게 느껴졌어요<br>다음번에도 또 방문할게요! <br>최고의 숙소.",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":11,
+      "review_id" : "lemer",
+      "review_text" : "처음에는 무섭다고 수영 안 한다고 하더니<br>지금은 물 만난 개처럼 하루종일 첨벙 첨벙.",
+      "rating" : "1",
+      "influencer" : false
+
+    },
+    {
+      "id":12,
+      "review_id" : "infose",
+      "review_text" : "가평에서의 짧은 여행이었지만, 다온 펜션에서의 시간은 정말 특별했어요! 숙소 시설도 너무 좋고, 친절한 호스트님 덕분에 편안하게 쉴 수 있었답니다. 다음에 또 방문하게 되면 더 여유 있게 즐기고 싶네요.",
+      "rating" : "2",
+      "influencer" : false
+    },
+    {
+      "id":13,
+      "review_id" : "weaogi",
+      "review_text" : "완벽한 힐링 타임을 보냈답니다. 다음에는 좀 더 여유 있게 다녀와야겠어요. 이번 여행의 소중한 추억 덕분에 벌써 다음 방문이 기대되네요 아름다운 자연 속에서 힐링하고 싶다면 다온 펜션이 최고의 선택일 거예요.",
+      "rating" : "1",
+      "influencer" : false
+
+    },
+    {
+      "id":14,
+      "review_id" : "asodibg",
+      "review_text" : "너무나 이쁘고 편안한 숙소에서 힐링할 수 있어서 정말 좋았어요 다음에 또 가면 꼭 여기로 올게요! 다온 펜션 진짜 최고예요!.",
+      "rating" : "4",
+      "influencer" : false
+
+    },
+    {
+      "id":15,
+      "review_id" : "saldg",
+      "review_text" : "다온 펜션 너무 예쁘고 편안해서 완전 힐링되는 여행이었어요!.",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":16,
+      "review_id" : "hidibe",
+      "review_text" : "가평 다온펜션 완전 강추에요! 깔끔하고 아기자기한 숙소에서 힐링할 수 있어 정말 좋았어요.",
+      "rating" : "5",
+      "influencer" : false
+    },
+    {
+      "id":17,
+      "review_id" : "bush",
+      "review_text" : "다온 펜션에서의 바베큐 파티 완전 최고였어요! 옥상 정원과 야외 수영장도 있어서 여유로운 힐링 타임 보냈네요",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":18,
+      "review_id" : "bash",
+      "review_text" : "펜션 시설도 깨끗하고 직원들도 친절해서 정말 좋았어요 다음에 또 가고 싶어요",
+      "rating" : "4",
+      "influencer" : false
+
+    },
+    {
+      "id":19,
+      "review_id" : "aweoigh",
+      "review_text" : "친구들이랑 함께 즐기니 더욱 좋았어요 다음에 가족들이랑 방문하면 좋을 것 같아요",
+      "rating" : "2",
+      "influencer" : false
+
+    },
+    {
+      "id":20,
+      "review_id" : "aasdg",
+      "review_text" : "최고의 여행이었습니다!",
+      "rating" : "4",
+      "influencer" : false
+
+    },
+    {
+      "id":21,
+      "review_id" : "qweto",
+      "review_text" : "저녁 노을이 비치는 야외에서 바베큐를 먹으며 힐링 가득한 시간을 보냈답니다.<br>다음에는 가족들과 함께 와서 더 여유롭게 즐기고 싶어요. 진짜 최고의 경험이었고, 다음에 또 가고 싶어요! 다온 펜션 강력 추천합니다!",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":22,
+      "review_id" : "bjcsf",
+      "review_text" : "깔끔한 객실과 편안한 침구, 그리고 너무나 멋진 인테리어가 정말 눈이 호강했어요! 직원 분들께서도 친절하게 안내해주셔서 정말 편하게 지내다 왔어요. 이번 숙박은 완전 만족스러웠어요 다음에 또 방문하고 싶어요!",
+      "rating" : "4",
+      "influencer" : false
+
+    },
+    {
+      "id":23,
+      "review_id" : "qpasdof",
+      "review_text" : "야외 수영장과 바비큐장도 완벽했고, 직원분들의 세심한 서비스까지 덤으로 받았죠 경치도 정말 예뻐서 힐링하기 딱이었어요 다음에 또 방문하고 싶은 곳이 되었네요",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":24,
+      "review_id" : "scibd",
+      "review_text" : "힐링이 필요했던 저에게 정말 딱이었어요 산책로도 있어서 여유롭게 걸으며 힐링할 수 있었죠 다음에 또 가고 싶네요!",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":25,
+      "review_id" : "gidhf",
+      "review_text" : "다온 펜션 픽업 서비스 덕분에 정말 편하게 이용했어요 펜션까지 직접 실려가서 짐 옮기는 수고도 없었죠 직원분들도 친절하게 맞이해주셔서 여행 스트레스 전혀 없었어요 펜션 도착하자마자 바로 쉴 수 있어서 너무 좋았어요",
+      "rating" : "5",
+      "influencer" : false
+
+    },
+    {
+      "id":26,
+      "review_id" : "fkzs",
+      "review_text" : "다온 펜션의 가성비는 정말 갑이었어요<br>가격대비 품질이 너무 좋아서 놀랐어요<br> 깨끗하고 넓은 객실에 시설도 최신식이었죠<br> 이렇게 좋은 곳에서 이 가격에 묵을 수 있다니 진짜 대박이었어요 다음에 또 가고 싶은 곳이 되었네요 강추합니다",
+      "rating" : "3",
+      "influencer" : false
+
+    }
+  ]
+}

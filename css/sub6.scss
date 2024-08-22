@@ -1,0 +1,813 @@
+@import "./_res";
+
+// reservation 공통
+.reservation_common {
+    .sub_container {
+        .contents {
+            .step_wrap {
+                .step {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        &:not(:last-of-type) {
+                            margin-right: 120px;
+                            position: relative;
+                            .circle {
+                                &::after{
+                                    content: '';
+                                    width: 120px;
+                                    display: inline-block;
+                                    border: dashed 1px #afafaf;
+                                    position: absolute;
+                                    left: 64px;
+                                    top: 32px;
+                                    z-index: 1;
+                                }
+                                & + p {
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                        &.active {
+                            .circle {
+                                background-color: #2f2f2f;
+                            }
+                            & ~ li {
+                                .circle {
+                                    & + p {
+                                        color: #efefef;
+                                        white-space: nowrap;
+                                    }
+                                }
+                            }
+                        }
+                        &.complete {
+                            .circle {
+                                cursor: pointer;
+                                background-color: #357EF1;
+                                &::after {
+                                    border-color: #357EF1;
+                                }
+                                & + p {
+                                    color: #357EF1;
+                                    opacity: 0.5;
+                                    // visibility: hidden;
+                                }
+                                span {
+                                    display: block;
+                                    color: transparent;
+                                    background: url("../img/icon/icon_check_white.svg") no-repeat center;
+                                }
+                            }
+                        }
+                        .circle {
+                            width: 64px;
+                            height: 64px;
+                            display: block;
+                            border: 8px solid rgba(255, 255, 255, 0.5);
+                            background-color: #efefef;
+                            text-align: center;
+                            border-radius: 50%;
+                            cursor: default;
+                            z-index: 2;
+                            span {
+                                font-weight: 700;
+                                color: #fff;
+                                line-height: 48px;
+                            }
+                        }
+                        p {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+                
+            }
+            .next_wrap {
+                margin-top: 48px;
+                border-top: 1px solid #efefef;
+                position: relative;
+                .next_btn {
+                    width: 200px;
+                    height: 60px;
+                    padding-left: 12px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #2f2f2f;
+                    color: #fff;
+                    border-radius: 0 0 8px 8px;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                    &.info {
+                        // display: none;
+                    }
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        margin-top: -4px;
+                        background: url("../img/icon/icon_arrow.svg") no-repeat center / 24px;
+                        // transform: rotate(90deg);
+                    }
+                }
+            }
+            .toastui-calendar-weekday {
+                .toastui-calendar-grid-selection {
+                    border-radius: 999px;
+                    &:first-of-type, &:last-of-type {
+                        background-color: rgba(81, 92, 230, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// step1
+.step1 {
+    .sub_container {
+        .contents {
+            .data_area {
+                .date_person {
+                    margin: 80px 0;
+                    padding: 64px 0;
+                    border: 1px solid #efefef;
+                    border-left: transparent;
+                    border-right: transparent;
+                    display: flex;
+                    align-items: center;
+                    li {
+                        &:not(:first-of-type) {
+                            margin-left: 100px;
+                        }
+                        &.data {
+                            width: calc(100% + 20px);
+                            .input_wrap {
+                                width: 100%;
+                                input {
+                                    width: 100%;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                        &.room {
+                            margin-left: auto;
+                        }
+                        .label {
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                        .input_wrap {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            input {
+                                width: 126px;
+                                height: 30px;
+                                text-align: center;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 30px;
+                            }
+                            .date {
+                                width: 164px;
+                                input {
+                                    color: #2f2f2f;
+                                }
+                                .tui-datepicker-input {
+                                    height: auto;
+                                }
+                                span {
+                                    margin-top: 0;
+                                }
+                                & + .sign {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    margin: 0 20px;
+                                }
+                            }
+                            .btn_wrap {
+                                width: 126px;
+                                height: 30px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                button {
+                                    width: 24px;
+                                    height: 24px;
+                                    background: url("../img/icon/icon_minus.svg") no-repeat center;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 3px;
+                                    &.minus {
+                                        opacity: 0.3;
+                                    }
+                                    &.plus {
+                                        left: auto;
+                                        right: 0;
+                                        background-image: url("../img/icon/icon_plus.svg");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .room_list_wrap {
+                    li {
+                        // display: none;
+                        display: flex;
+                        align-items: center;
+                        &:not(:first-of-type) {
+                            margin-top: 64px;
+                        }
+                        .room_img {
+                            width: 480px;
+                            height: 320px;
+                            margin-right: 20px;
+                            border-radius: 20px;
+                            overflow: hidden;
+                        }
+                        .room_info {
+                            width: calc(100% - 480px);
+                            position: relative;
+                            .room_name {
+                                font-size: 24px;
+                                font-weight: 700;
+                                margin-bottom: 20px;
+                                .tag {
+                                    padding: 8px 16px;
+                                    display: inline-block;
+                                    margin-right: 8px;
+                                    font-weight: 700;
+                                    border: 2px solid #BE004F;
+                                    border-radius: 8px;
+                                    text-transform: uppercase;
+                                    &.love {
+                                        color: #BE004F;
+                                    }
+                                    &.only {
+                                        border-color: #3226C1;
+                                        color: #3226C1;
+                                    }
+                                }
+                                .room_value_num {
+                                    font: inherit;
+                                }
+                                .room_price {
+                                    margin-left: 4px;
+                                    color: #afafaf;
+                                    font-weight: 600;
+                                }
+                            }
+                            ul {
+                                padding: 38px 40px;
+                                background-color: rgba(242, 242, 242, 0.5);
+                                border-radius: 20px;
+                                li {
+                                    &:not(:first-of-type) {
+                                        margin-top: 20px;
+                                    }
+                                    p {
+                                        display: flex;
+                                        align-items: center;
+                                        span {
+                                            display: block;
+                                            margin-right: 20px;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                            .room_btn_wrap {
+                                position: absolute;
+                                right: 40px;
+                                bottom: 28px;
+                                .room_select_btn {
+                                    padding: 12px 24px;
+                                    background-color: #afafaf;
+                                    color: #fff;
+                                    font-weight: 700;
+                                    border-radius: 8px;
+                                    &.selected {
+                                        background-color: #2f2f2f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & + .room_list_wrap {
+                        margin-top: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
+// step2
+.step2 {
+    .sub_container {
+        .contents {
+            .info_wrap {
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                .left {
+                    width: calc(64% - 20px);
+                    display: block;
+                    margin-top: 56px;
+                    padding-top: 40px;
+                    border-top: 1px solid #efefef;
+                    .user_info {
+                        margin-bottom: 56px;
+                        padding-bottom: 40px;
+                        border-bottom: 1px solid #efefef;
+                        .input_list {
+                            li {
+                                &:not(:first-of-type) {
+                                    margin-top: 24px;
+                                }
+                                &.tel_wrap {
+                                    > div {
+                                        display: flex;
+                                        margin-bottom: 8px;
+                                        align-items: center;
+                                        input {
+                                            width: calc(100% - 120px);
+                                        }
+                                        button {
+                                            width: 112px;
+                                            margin-left: 8px;
+                                            padding: 16px 0;
+                                            background-color: #357EF1;
+                                            border-radius: 8px;
+                                            color: #fff;
+                                            font-weight: 700;
+                                            white-space: nowrap;
+                                        }
+                                    }
+                                }
+                                &.textarea_wrap {
+                                    width: 100%;
+                                }
+                                .label {
+                                    font-weight: 500;
+                                    margin-bottom: 8px;
+                                }
+                                input {
+                                    width: 100%;
+                                    padding: 16px 20px;
+                                    border: 1px solid #afafaf;
+                                    border-radius: 8px;
+                                    &.card_name {
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                select {
+                                    width: 100%;
+                                    padding: 16px 20px;
+                                    border: 1px solid #afafaf;
+                                    border-radius: 8px;
+                                    background: url("../img/icon/icon_arrow_down.svg") no-repeat right 16px center / 20px;
+                                }
+                                .input_wrap {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .first, .month  {
+                                        width: calc(40% - 4px);
+                                    }
+                                    .last, .year {
+                                        width: calc(60% - 4px);
+                                    }
+                                }
+                            }
+                        }
+                        .card_wrap {
+                            .input_list {
+                                li {
+                                    &.half {
+                                        justify-content: flex-start;
+                                        > div {
+                                            &:last-of-type {
+                                                width: 20%;
+                                                margin-left: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card_wrap {
+                        width: 100%;
+                        margin-top: 40px;
+                        padding-top: 40px;
+                        border-top: 1px solid #efefef;
+                        .card_box {
+                            width: 100%;
+                            height: 368px;
+                            margin-bottom: 40px;
+                            background-color: #efefef;
+                            display: inline-grid;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 20px;
+                            .card {
+                                width: 400px;
+                                height: 240px;
+                                position: relative;
+                                transform: perspective(800px) rotateY(0deg);
+                                transform-style: preserve-3d;
+                                transition: transform 0.6s;
+                                > div {
+                                    width: 100%;
+                                    height: 100%;
+                                    padding: 40px;
+                                    background-color: #2f2f2f;
+                                    border-radius: 16px;
+                                    border: 4px solid #D6B46C;
+                                    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    &.card_front {
+                                        opacity: 1;
+                                        z-index: 2;
+                                        transition: all 0s ease 0.2s;
+                                        > p {
+                                            font-size: 20px;
+                                            color: #fff;
+                                            font-weight: 700;
+                                            letter-spacing: 0;
+                                            position: absolute;
+                                            right: 40px;
+                                            top: 40px;
+                                        }
+                                        .card_data {
+                                            &::before {
+                                                content: '';
+                                                display: block;
+                                                width: 54px;
+                                                height: 40px;
+                                                background: url("../img/icon/icon_sim.svg") no-repeat center;
+                                                position: absolute;
+                                                left: 40px;
+                                                top: 64px;
+                                            }
+                                            .name_wrap {
+                                                width: calc(100% - 52px);
+                                                display: flex;
+                                                align-items: center;
+                                                margin-top: 16px;
+                                            }
+                                            .date_wrap {
+                                                width: 56px;
+                                                display: flex;
+                                                align-items: center;
+                                                position: absolute;
+                                                right: 40px;
+                                                bottom: 40px;
+                                                span {
+                                                    margin: 0 4px 0 2px;
+                                                    color: #fff;
+                                                }
+                                            }
+                                            p {
+                                                color: #fff;
+                                                letter-spacing: 0;
+                                                &.num {
+                                                    height: 30px;
+                                                    margin-top: 84px;
+                                                    font-size: 20px;
+                                                    font-weight: 700;
+                                                }
+                                                &.name {
+                                                    text-transform: uppercase;
+                                                    &.last {
+                                                        margin-left: 4px;
+                                                    }
+                                                }
+                                                &.date {
+                                                    width: fit-content;
+                                                    left: auto;
+                                                    right: 40px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.card_back {
+                                        opacity: 0;
+                                        position: relative;
+                                        transform: rotateY(180deg);
+                                        z-index: 1;
+                                        transition: all 0s ease 0.2s;
+                                        &::before {
+                                            content: '';
+                                            display: block;
+                                            width: 100%;
+                                            height: 40px;
+                                            background-color: #afafaf;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 32px;
+                                        }
+                                        p {
+                                            width: 50%;
+                                            height: 32px;
+                                            padding: 4px 20px;
+                                            position: absolute;
+                                            left: 32px;
+                                            top: 96px;
+                                            text-align: right;
+                                            font-weight: 700;
+                                            letter-spacing: 0;
+                                            color: #2f2f2f;
+                                            background-color: #efefef;
+                                            border-radius: 999px;
+                                        }
+                                    }
+                                }
+                                &.on {
+                                    transform: perspective(800px) rotateY(180deg);
+                                    > div {
+                                        &.card_front {
+                                            opacity: 0;
+                                            z-index: 1;
+                                        }
+                                        &.card_back {
+                                            opacity: 1;
+                                            z-index: 2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right {
+                    width: calc(36% - 20px);
+                    margin-top: 56px;
+                    .sticky_menu {
+                        position: sticky;
+                        right: 0;
+                        top: 56px;
+                    }
+                }
+            }
+        }
+    }
+    .right_mb_info, .right_mb_menu {
+        display: none;
+    }
+    .data_list {
+        padding: 40px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        border: 1px solid #efefef;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.05);
+        li {
+            .label {
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            .data {
+                font-size: 20px;
+                font-weight: 700;
+                #tag, #mb_tag {
+                    padding: 8px 10px;
+                    border-radius: 8px;
+                    font-size: 12px;
+                    font-weight: 700;
+                    background-color: #2f2f2f;
+                    color: #fff;
+                    vertical-align: middle;
+                    text-transform: uppercase;
+                    &.love {
+                        background-color: #BE004F;
+                    }
+                    &.only {
+                        background-color: #3226C1;
+                    }
+                }
+                
+                #room_num, span, em {
+                    font: inherit;
+                }
+                .room_data {
+                    color: #afafaf;
+                    font-weight: 400;
+                    font-size: 16px;
+                    #room_data, #mb_room_data {
+                        color: inherit;
+                        font: inherit;
+                    }
+                }
+                &.room_tag_num, &.mb_room_tag_num {
+                    display: flex;
+                    gap: 8px;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    & > span {
+                        &:not(:nth-of-type(odd)) {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                &.room_tag_num {
+                    max-width: 270px;
+                }
+                &.mb_room_tag_num {
+                    max-width: 260px;
+                    justify-content: flex-end;
+                }
+                #mb_room_num_value {
+                    display: inline-block;
+                    width: 56px;
+                }
+            }
+            &:not(:first-of-type) {
+                margin-top: 32px;
+            }
+        }
+    }
+    .price_wrap {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > p {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .price {
+            text-align: right;
+            #primary {
+                font-size: 20px;
+                color: #afafaf;
+                text-decoration: line-through;
+            }
+            p {
+                font-size: 32px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 4px;
+                    background: url("../img/icon/icon_krw.svg") no-repeat center;
+                }
+            }
+        }
+    }
+    .payment_btn_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #2f2f2f;
+        border-radius: 8px;
+        overflow: hidden;
+        .payment_btn {
+            width: 100%;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: 700;
+            &.member {
+                background-color: #2f2f2f;
+                color: #fff;
+            }
+        }
+    }
+}
+// step3
+.step3 {
+    .sub_container {
+        .contents {
+            .complete_wrap {
+                text-align: center;
+                .img_wrap {
+                    width: 80px;
+                    height: 80px;
+                    margin: 82px auto 64px;
+                }
+                .txt_wrap {
+                    margin-bottom: 80px;
+                    p {
+                        strong {
+                            display: block;
+                            font-size: 32px;
+                            font-weight: 700;
+                            margin-bottom: 32px;
+                            span {
+                                display: block;
+                                font-size: 24px;
+                                font-weight: 700;
+                                margin-top: 24px;
+                                margin-bottom: 56px;
+                            }
+                        }
+                        span {
+                            font-size: 24px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+                .btn_wrap {
+                    font-size: 0;
+                    button {
+                        width: 240px;
+                        padding: 16px 0;
+                        text-align: center;
+                        border: 1px solid #afafaf;
+                        border-radius: 8px;
+                        font-weight: 700;
+                        &:not(:first-of-type) {
+                            margin-left: 12px;
+                        }
+                        &.main {
+                            color: #afafaf;
+                        }
+                        &.reservation {
+                            border-color: #357EF1;
+                            background-color: #357EF1;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// look
+.look {
+    .sub_top {
+        background-image: url("../img/img_sub6_reservation_look.jpg");
+    }
+    .sub_container {
+        .contents {
+            .btn_wrap {
+                text-align: center;
+                button {
+                    width: 240px;
+                    padding: 16px 0;
+                    text-align: center;
+                    border: 2px solid #2f2f2f;
+                    border-radius: 8px;
+                    font-weight: 700;
+                    background-color: #fff;
+                    color: #2f2f2f;
+                    &:not(:first-of-type) {
+                        margin-left: 12px;
+                    }
+                    &.member:not(.not) {
+                        background-color: #2f2f2f;
+                        border-color: #2f2f2f;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.popup {
+    &.non_member {
+        .label {
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        input {
+            width: calc(100% - 88px);
+            padding: 16px 20px;
+            border: 1px solid #afafaf;
+            border-radius: 8px;
+        }
+        button {
+            width: 76px;
+            padding: 16px 20px;
+            margin-left: 8px;
+            background-color: #afafaf;
+            border-radius: 8px;
+            color: #fff;
+            transition: all 0.3s;
+            &:hover {
+                background-color: #357EF1;
+            }
+        }
+    }
+}
+
+
+@import "./_res-sub6";

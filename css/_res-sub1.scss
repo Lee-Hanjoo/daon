@@ -1,0 +1,766 @@
+@import "./_res";
+
+@include res('pc-s'){
+    //intro PC-S start
+    .intro{
+        .sub_container{
+            .contents{
+                .intro_grid_wrapper{
+                grid-gap: 15px;
+                    p{
+                        &:nth-child(1){
+                            height: 580px;
+                        }
+                        &:nth-child(2){
+                            height: 220px;
+                            img{
+                                object-position: 0px -294px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 220px;
+                        }
+                        &:nth-child(4){
+                            height: 345px;
+                            img{
+                                object-position: 0px -150px;
+                            }
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 795px;
+                    h5{
+                        font-size: 22px;
+                        line-height: 36px;
+                    }   
+                }
+                .intro_full_bg{
+                    .intro_full_bg_inner{
+                        width: 660px;
+                        .intro_full_bg_inner_txt{
+                            margin: 32px auto;
+                            h5{
+                                font-size: 22px;
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //intro PC-S end
+}
+
+@media screen and (max-width: 1400px){
+    .intro{
+        .sub_container{
+            .contents{
+                .intro_grid_wrapper{
+                    width: calc(100% - 160px);
+                }
+            }
+        }
+    }
+}
+
+@include res('tab'){
+    //intro TAB start
+    .intro{
+        .sub_container{
+            .contents{
+                .intro_grid_wrapper{
+                    p{
+                        &:nth-child(1){
+                            height: 540px;
+                        }
+                        &:nth-child(2){
+                            height: 200px;
+                            img{
+                                object-position: 0px -200px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 200px;
+                        }
+                        &:nth-child(4){
+                            height: 325px;
+                            img{
+                                object-position: 0px -26px;
+                            }
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 717px;
+                    margin: 60px auto;
+                    h5{
+                        font-size: 20px;
+                    }   
+                }
+                .intro_full_bg{
+                    margin-top: 100px;
+                    .intro_full_bg_inner{
+                        width: 597px;
+                        .intro_full_bg_inner_txt{
+                            margin: 28px auto;
+                            h5{
+                                font-size: 20px;
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //intro TAB end
+    //contact TAB start
+    .contact{
+        .sub_container{
+            .contents{
+                .contact_map{
+                    height: 400px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 8px;
+                    .contact_map_btn{
+                        right: 16px;
+                        bottom: 16px;
+                        gap: 8px;
+                        button{
+                            height: 38px;
+                            i{
+                                top: 6px;
+                                left: 9px;
+                                img{
+                                    width: 15px;
+                                }
+                            }
+                            a{
+                                font-size: 14px;
+                                padding: 7px 4px;
+                            }
+                        }
+                        .contact_map_naver_btn{
+                            width: 130px;
+                        }
+                        .contact_map_google_btn{
+                            width: 118px;
+                        }
+                    }
+                }
+                .contact_infomation{
+                    margin: 0 auto;
+                    .contact_info{
+                        &.contact_info2{
+                            .contact_info_txt{
+                                li{
+                                    i{
+                                        width: 34px;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        padding-right: 2px;
+                                        &::after{
+                                            width: 14px;
+                                            height: 14px;
+                                        }
+                                    }
+                                    div{
+                                        span{
+                                            margin: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact_info_tit{
+                            margin-top: 24px;
+                            padding-left: 6px;
+                            h3{
+                                font-size: 20px;
+                            }
+                            &::before{
+                                height: 16px;
+                                top: 6px;
+                            }
+                        }
+                        .contact_info_txt{
+                            margin-top: 16px;
+                            li{
+                                font-size: 14px;
+                                padding: 16px;
+                                gap: 4px;
+                                &::before{
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 4px;
+                                }
+                                &::after{
+                                    width: 195%;
+                                    left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   }
+   //contact TAB end
+}
+
+@media screen and (max-width: 1060px){
+    .intro{
+        .sub_container{
+            .contents {
+                .intro_grid_wrapper{
+                    grid-gap: 10px;
+                    p{
+                        &:nth-child(1){
+                            height: 500px;
+                        }
+                        &:nth-child(2){
+                            height: 180px;
+                            img{
+                                object-position: 0px -125px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 180px;
+                        }
+                        &:nth-child(4){
+                            height: 310px;
+                            img{
+                                object-position: 0;
+                            }
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 630px;
+                    margin: 40px auto;
+                    h5{
+                        font-size: 18px;
+                        line-height: 30px;
+                    }   
+                }
+                .intro_full_bg{
+                    margin-top: 80px;
+                    .intro_full_bg_inner{
+                        width: 530px;
+                        .intro_full_bg_inner_txt{
+                            margin: 24px auto;
+                            h5{
+                                font-size: 18px;
+                                line-height: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 975px){
+    .contact{
+        .sub_container{
+            .contents{
+                .contact_infomation{
+                    .contact_info{
+                        &.contact_info1{
+                            .contact_info_txt{
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.contact_info2{
+                            .contact_info_txt{
+                                li{
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                    div{
+                                        span{
+                                            width: 3px;
+                                            height: 3px;
+                                            margin: 2px;
+                                        }
+                                    }
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 22px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.contact_info3{
+                            .contact_info_txt{
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact_info_txt{
+                            li{
+                                padding: 0;
+                                gap: 0;
+                                &::before{
+                                    width: 26px;
+                                    height: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   } 
+}
+
+@media screen and (max-width: 870px){
+    .intro{
+        .sub_container{
+            .contents {
+                .intro_grid_wrapper{
+                    p{
+                        &:nth-child(1){
+                            height: 480px;
+                        }
+                        &:nth-child(2){
+                            height: 170px;
+                            img{
+                                object-position: 0px -90px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 170px;
+                        }
+                        &:nth-child(4){
+                            height: 300px;
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 566px;
+                    h5{
+                        font-size: 16px;
+                    }   
+                }
+                .intro_full_bg{
+                    .intro_full_bg_inner{
+                        width: 469px;
+                        .intro_full_bg_inner_txt{
+                            h5{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res('mo-l'){
+    //intro Mobile-Large start
+    .intro{
+        .sub_container{
+            .contents{
+                .intro_grid_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 16px;
+                    p{
+                        height: 300px;
+                        &:nth-child(1){
+                            height: 300px;
+                        }
+                        &:nth-child(2){
+                            height: 300px;
+                            img{
+                                object-position: 0px -497px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 300px;
+                        }
+                        &:nth-child(4){
+                            height: 300px;
+                            img{
+                                object-position: 0px -44px;
+                            }
+                        }
+                        img{
+                            border-radius: 8px;
+                        }
+                    }
+                }
+                .intro_full_bg{
+                    margin-top: 60px;
+                    .intro_full_bg_inner{
+                        .logo{
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //intro Mobile-Large end
+    //contact Mobile-Large start
+    .contact{
+        .sub_container{
+            .contents{
+                .contact_map{
+                    height: 280px;
+                    .contact_map_btn{
+                        right: 12px;
+                        bottom: 16px;
+                        gap: 8px;
+                        button{
+                            height: 30px;
+                            i{
+                                top: 2px;
+                                left: 4px;
+                                img{
+                                    width: 13px;
+                                }
+                            }
+                            a{
+                                font-size: 12px;
+                                padding: 5px 4px;
+                                margin-left: 14px;
+                            }
+                        }
+                        .contact_map_naver_btn{
+                            width: 108px;
+                        }
+                        .contact_map_google_btn{
+                            width: 96px;
+                        }
+                    }
+                }
+                .contact_infomation{
+                    flex-direction: column;
+                    .contact_info{
+                        width: 100%;
+                        &.contact_info1{
+                            .contact_info_txt{
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 20px;
+                                        }
+                                    }    
+                                }
+                            }
+                        }
+                        &.contact_info2{
+                            .contact_info_txt{
+                                li{
+                                    p{
+                                        font-size: 14px;
+                                        &::after{
+                                            width: 12px;
+                                            height: 12px;
+                                        }
+                                    }
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 20px;
+                                        }
+                                    }
+                                    &:nth-child(3){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        &.contact_info3{
+                            .contact_info_txt{
+                                li{
+                                    width: 100%;
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact_info_tit{
+                            h3{
+                                font-size: 24px;
+                            }
+                            &::before{
+                                top: 9px;
+                            }
+                        }
+                        .contact_info_txt{
+                            li{
+                                height: 80px;
+                                gap: 4px;
+                                padding-left: 8px;
+                                border-bottom: 1px solid #efefef;
+                                b{
+                                    font-size: 14px;
+                                }
+                                &::before{
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   } 
+   //contact Mobile-Large end
+}
+
+@media screen and (max-width: 610px){
+    .intro{
+        .sub_container{
+            &.sub_container_full{
+                .title{
+                    padding: 0 16px;
+                }
+            }
+            .contents {
+                .intro_grid_wrapper{
+                    p{
+                        height: 240px;
+                        &:nth-child(1){
+                            height: 200px;
+                        }
+                        &:nth-child(2){
+                            height: 200px;
+                            img{
+                                object-position: 0px -416px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 200px;
+                        }
+                        &:nth-child(4){
+                            height: 200px;
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 393px;
+                    margin: 36px auto;
+                    h5{
+                        font-size: 14px;
+                        line-height: 28px;
+                    }   
+                }
+                .intro_full_bg{
+                    .intro_full_bg_inner{
+                        width: 345px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res('mo-s'){
+    //intro Mobiel-Small start
+    .intro{
+        .sub_container{
+            .contents {
+                .intro_grid_wrapper{
+                    gap: 4px;
+                    p{
+                        height: 150px;
+                        &:nth-child(1){
+                            height: 150px;
+                        }
+                        &:nth-child(2){
+                            height: 150px;
+                            img{
+                                object-position: 0px -359px;
+                            }
+                        }
+                        &:nth-child(3){
+                            height: 150px;
+                        }
+                        &:nth-child(4){
+                            height: 150px;
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 319px;
+                    margin: 24px auto;
+                    h5{
+                        line-height: 30px;
+                    }   
+                }
+                .intro_full_bg{
+                    .intro_full_bg_inner{
+                        .logo{
+                            img{
+                                width: 70%;
+                            }
+                        }
+                        .intro_full_bg_inner_txt{
+                            h5{
+                                font-size: 14px;
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ////intro Mobiel-Small end
+    //contact Mobiel-Small start
+    .contact{
+        .sub_container{
+            .contents{
+                .contact_map{
+                    .contact_map_btn{
+                        right: 8px;
+                        bottom: 12px;
+                        gap: 4px;
+                        button{
+                            height: 28px;
+                            border-radius: 4px;
+                            i{
+                                top: 1px;
+                                left: 8px;
+                                img{
+                                    width: 12px;
+                                }
+                            }
+                            a{
+                                font-size: 10px;
+                                padding: 0;
+                                margin-left: 13px;
+                            }
+                        }
+                        .contact_map_naver_btn{
+                            width: 100px;
+                        }
+                    }
+                }
+                .contact_infomation{
+                    .contact_info{
+                        &.contact_info1{
+                            .contact_info_txt{
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.contact_info2{
+                            .contact_info_txt{
+                                margin-top: 8px;
+                                li{
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.contact_info3{
+                            .contact_info_txt{
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        &::before{
+                                            background-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact_info_tit{
+                            margin-top: 20px;
+                            h3{
+                                font-size: 20px;
+                            }
+                            &::before{
+                                top: 6px;
+                            }
+                        }
+                        .contact_info_txt{
+                            li{
+                                height: 56px;
+                                font-size: 12px;
+                                padding: 8px;
+                                gap: 0;
+                                padding-left: 4px;
+                                &::before{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   }
+   //contact Mobiel-Small end
+}
+
+@media screen and (max-width: 405px){
+    .intro{
+        .sub_container{
+            .contents {
+                .intro_grid_wrapper{
+                    p{
+                        &:nth-child(2){
+                            img{
+                                object-position: 0px -230px;
+                            }
+                        }
+                        &:nth-child(4){
+                            img{
+                                object-position: 0px -5px;
+                            }
+                        }
+                    }
+                }
+                .intro_txt{
+                    width: 260px;
+                }
+                .intro_full_bg{
+                    .intro_full_bg_inner{
+                        width: 283px;
+                    }
+                }
+            }
+        }
+    }
+}

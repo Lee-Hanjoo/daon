@@ -1,0 +1,203 @@
+@import "./_res";
+
+@include res('tab'){
+    // policy_service Tablet start
+    .policy_service {
+        .sub_container {
+            .contents{
+                .service_wrap{
+                    .service_article{
+                        .service_article_tit{
+                            margin-bottom: 12px;
+                            h3{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .service_article_txt{
+                        ul{
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_service Tablet end
+    // policy_privacy Tablet start
+    .policy_privacy {
+        .sub_container {
+            .contents{
+                .privacy_wrap{
+                    .privacy_chapter{
+                        article{
+                            h3{
+                                font-size: 18px;
+                            }
+                            .privacy_chapter_table{
+                                ul{
+                                    gap: 24px;
+                                    li{
+                                        width: 240px;
+                                        a{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .privacy_info{
+                        article{
+                            h3{
+                                font-size: 18px;
+                            }
+                            .privacy_info_cont{
+                                ul{
+                                    li{
+                                        p{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_privacy Tablet end
+}
+
+@include res('mo-l'){
+    // policy_service Mobile-Large start
+    .policy_service {
+        .sub_container {
+            .contents{
+                .service_wrap{
+                    .service_article{
+                        .service_article_tit{
+                            margin-bottom: 4px;
+                            h3{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .service_article_txt{
+                        margin: 12px 0 24px;
+                        ul{
+                            li{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_service Mobile-Large end
+    // policy_privacy Mobile-Large start
+    .policy_privacy {
+        .sub_container {
+            .contents{
+                .privacy_wrap{
+                    .privacy_chapter{
+                        article{
+                            h3{
+                                font-size: 16px;
+                            }
+                            .privacy_chapter_table{
+                                padding: 16px;
+                                margin: 16px 0 24px;
+                                ul{
+                                    gap: 8px;
+                                    li{
+                                        width: 192px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .privacy_info{
+                        margin-top: 16px;
+                        article{
+                            h3{
+                                font-size: 16px;
+                            }
+                            .privacy_info_cont{
+                                margin: 12px 0;
+                                ul{
+                                    li{
+                                        padding-bottom: 18px;
+                                        p{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_privacy Mobile-Large end
+}
+
+@include res('mo-s'){
+    // policy_service Mobile-Small start
+    .policy_service {
+        .sub_container {
+            .contents{
+                .service_wrap{
+                    .service_article{
+                        .service_article_tit{
+                            margin-bottom: 0px;
+                            h3{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .service_article_txt{
+                        margin: 8px 0 16px;
+                        ul{
+                            padding: 8px;
+                            li{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_service Mobile-Small end
+    // policy_privacy Mobile-Small start
+    .policy_privacy {
+        .sub_container {
+            .contents{
+                .privacy_wrap{
+                    .privacy_chapter{
+                        article{
+                            .privacy_chapter_table{
+                                padding: 8px;
+                                ul{
+                                    gap: 4px;
+                                    li{
+                                        width: 120px;
+                                        a{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // policy_privacy Mobile-Small end
+}
+

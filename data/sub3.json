@@ -1,0 +1,86 @@
+{
+  "items": [
+    {
+      "bbq": [
+        {
+          "title": [
+            "BARBECUE",
+            "바베큐",
+            "가족과 친구들과 함께 즐거운 시간을 보내보세요."
+          ],
+          "img": [
+            "./img/img_facilities_bbq_01.jpg",
+            "./img/img_facilities_bbq_02.jpg",
+            "./img/img_facilities_bbq_03.jpg"
+          ],
+          "text": [
+            {
+              "subtext1": "시간 안내",
+              "subtext1inner": "이용 가능 시간: 16:00 ~ 21:00"
+            },
+            {
+              "subtext1": "요금 안내",
+              "subtext1inner": "50,000원(2인 기준) <br> 인원 추가 시 20,000원(1인 기준)"
+            },
+            {
+              "subtext1": "이용 안내",
+              "subtext1inner": "우천 시 사용 불가<br>허용되지 않은 화기류 사용 불가"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pool": [
+        {
+          "title": [
+            "POOL",
+            "야외 수영장",
+            "시원한 물결 속에서 여유로운 휴식을 취해보세요."
+          ],
+          "img": [
+            "./img/img_facilities_pool_01.jpg",
+            "./img/img_facilities_pool_02.jpg",
+            "./img/img_facilities_pool_03.jpg"
+          ],
+          "text": [
+            {
+              "subtext1": "시간 안내",
+              "subtext1inner": "이용 가능 시간: 16:00 ~ 21:00"
+            },
+            {
+              "subtext1": "이용 안내",
+              "subtext1inner": "이용 전 샤워 필수<br>수영복, 래쉬가드 착용 필수(면티, 반바지 불가)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+        "rooftop": [
+            {
+              "title": [
+                "ROOFTOP",
+                "옥상정원",
+                "푸르른 이 공간에서 여유로운 시간을 보내보세요. "
+              ],
+              "img": [
+                "./img/img_facilities_rooftop_02.jpg",
+                "./img/img_facilities_rooftop_03.jpg",
+                "./img/img_facilities_rooftop_04.jpg"
+              ],
+              "text": [
+                {
+                  "subtext1": "시간 안내",
+                  "subtext1inner": "이용 가능 시간: 12:00  ~ 22:00"
+                },
+                {
+                  "subtext1": "이용 안내",
+                  "subtext1inner": "우천 시 사용 불가 <br> 허용되지 않은 화기류 사용 불가"
+                }
+              ]
+            }
+          ]
+    }
+  ]
+}

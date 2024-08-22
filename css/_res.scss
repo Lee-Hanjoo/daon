@@ -1,0 +1,17 @@
+// _res.scss
+
+
+@mixin res($dpi){
+    @if($dpi == 'pc-s'){
+        @media (max-width:1499px){ @content }
+    }
+    @if($dpi == 'tab'){
+        @media (max-width:1279px){ @content }
+    }
+    @if($dpi == 'mo-l'){
+        @media (max-width:767px){ @content }
+    }
+    @if($dpi == 'mo-s'){
+        @media (max-width:479px){ @content }
+    }
+}

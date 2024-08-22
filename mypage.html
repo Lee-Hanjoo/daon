@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/mypage.css">
+    <script src="./js/mypage.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="sub mypage">
+        <!-- 서브페이지 상단 고정 영역 -->
+        <div class="sub_top">
+            <div class="dim"></div>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./mypage.html">MYPAGE</a></li>
+                    <li><a href="./mypage.html">마이페이지</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub_container">
+            <h2 class="title">
+                마이페이지
+                <span class="desc">회원정보 및 예약내역을 조회합니다.</span>
+            </h2>
+            <!-- 페이지 컨텐츠 내용 -->
+            <div class="contents">
+                <div class="mypage_wrap">
+                    <div class="mypage_tap_wrap">
+                        <ul class="tab line">
+                            <li class="on"><a href="#">회원정보</a></li>
+                            <li><a href="#">예약내역</a></li>
+                        </ul>
+                        <div class="tab_cont">
+                            <div class="mypage_info on">
+                                <ul class="mypage_info_input">
+                                    <li>
+                                        <ul class="email_ul">
+                                            <p>이메일</p>
+                                            <li class="email_box">
+                                                <label for="email"></label>
+                                                <input id="email" type="email" readonly>
+                                            </li>
+                                            <li class="checkbox_wrap">
+                                                <input type="checkbox" class="checkbox" id="agree_email_marketing" name="chk">
+                                                <label for="agree_email_marketing">
+                                                    <i></i>
+                                                    <span>이메일 마케팅 수신 동의 <span>(선택)</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="pw_ul">
+                                            <p>비밀번호</p>
+                                            <li class="pw_box">
+                                                <label for="password"></label>
+                                                <input id="password" type="password" placeholder="(영문/숫자/특문 조합 8~15자)">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="pw_check_ul">
+                                            <p>비밀번호 확인</p>
+                                            <li class="pw_check_box">
+                                                <label for="pw_check"></label>
+                                                <input id="pw_check" type="password" placeholder="(영문/숫자/특문 조합 8~15자)">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="name_ul">
+                                            <p>이름</p>
+                                            <li class="name_box">
+                                                <label for="name"></label>
+                                                <input id="name" type="text" placeholder="이름" readonly>
+                                            </li>
+                                            <li class="checkbox_wrap">
+                                                <input type="checkbox" class="checkbox" id="agree_privacy_marketing" name="chk">
+                                                <label for="agree_privacy_marketing">
+                                                    <i></i>
+                                                    <span>개인정보 마케팅 활용 동의 <span>(선택)</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="phone_ul">
+                                            <p>휴대폰번호</p>
+                                            <li class="phone_box">
+                                                <label for="phone"></label>
+                                                <input id="phone" type="tel" placeholder="휴대폰 번호(-없이 입력)">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="birth_ul">
+                                            <p>생년월일</p>
+                                            <li class="birth_box">
+                                                <label for="birth"></label>
+                                                <input id="birth" type="text" placeholder="생년월일">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="coupon_ul">
+                                            <p>쿠폰</p>
+                                            <li class="coupon_box">
+                                                <input type="button" name="pop_btn" value="쿠폰확인">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="mypage_info_member_delete">
+                                    <button class="mypage_info_member_delete_btn"><a href="#">회원탈퇴</a></button>
+                                </div>
+                                <div class="mypage_info_btn">
+                                    <button class="mypage_info_fix_btn"><a href="#">수정</a></button>
+                                    <button class="mypage_info_cancel_btn"><a href="#">취소</a></button>
+                                </div>
+                            </div>
+                            <div class="mypage_reservation">
+                                <table class="mypage_reservation_list">
+                                    <tr>
+                                        <th>날짜</th>
+                                        <th>객실</th>
+                                        <th>인원</th>
+                                        <th>예약상태</th>
+                                        <th>이용현황</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="mypage_reservation_date"></td>
+                                        <td class="mypage_reservation_room"></td>
+                                        <td class="mypage_reservation_person"></td>
+                                        <td>결제완료</td>
+                                        <td>입실 대기중</td>
+                                    </tr>
+                                </table>
+                                <article class="mypage_reservation_cancel">
+                                    <h3>취소 및 환불 규정</h3>
+                                    <table>
+                                        <tr>
+                                            <th>취소 규정</th>
+                                            <td>
+                                                <ul>
+                                                    <li>입실 3일 전 무료 취소 가능</li>
+                                                    <li>입실 1일 전 50% 환불 가능</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>취소수수료 부과 예외 규정</th>
+                                            <td>
+                                                <ul>
+                                                    <li>입실 시각 경과 전 발생한 예약</li>
+                                                    <li>- 예약 완료 시각으로부터 1시간 이내</li>
+                                                    <li>- 단, 예약 완료 후 1시간 이내라도 입실 시간 경과 시 취소 불가</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>입실 시각 경과 후 발생한 예약 </li>
+                                                    <li>- 예약 완료 시각으로부터 15분 이내</li>
+                                                    <li>- 단, 이미 입실한 경우 취소 불가</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>취소 수수료 부과 정책 확인 경로</th>
+                                            <td>
+                                                <ul>
+                                                    <li>HOME > 마이페이지</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <span class="alert">※ 취소 규정이 적용되는 기준일은 ‘입실일’이며, 취소수수료는 쿠폰 및 포인트와 같은 할인 금액을 포함한 ‘최초 예약 금액’을 기준으로 계산됩니다.</span>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup coupon">
+                    <div class="popup_cont">
+                        <div class="popup_top">
+                            <h3 class="popup_title">쿠폰함</h3>
+                            <button class="popup_close_btn"></button>
+                        </div>
+                        <div class="popup_inner">
+                            <!-- inner 안쪽에 팝업 내용 작업 -->
+                            <div class="coupon_popup_cont_inner">
+                                <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_01">
+                                    <div class="coupon_popup_cont_inner_coupon_tit">
+                                        <h2>10%</h2>
+                                        <h3>신규 고객 전용 쿠폰</h3>
+                                    </div>
+                                    <div class="coupon_popup_cont_inner_coupon_txt">
+                                        <span>최대 20,000 적용</span>
+                                        <div class="coupon_popup_cont_inner_coupon_date">
+                                            <span class="coupon_popup_cont_inner_coupon_date_icon">D-7</span>
+                                            <span>2024. 06. 19까지</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_02">
+                                    <div class="coupon_popup_cont_inner_coupon_tit">
+                                        <h2>5,000원</h2>
+                                        <h3>깜짝 할인 쿠폰</h3>
+                                    </div>
+                                    <div class="coupon_popup_cont_inner_coupon_txt">
+                                        <span></span>
+                                        <div class="coupon_popup_cont_inner_coupon_date">
+                                            <span class="coupon_popup_cont_inner_coupon_date_icon">D-1</span>
+                                            <span>2024. 06. 13까지</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_03">
+                                    <div class="coupon_popup_cont_inner_coupon_tit">
+                                        <h2>3,000원</h2>
+                                        <h3>귀여운 강아지를 위한 쿠폰</h3>
+                                    </div>
+                                    <div class="coupon_popup_cont_inner_coupon_txt">
+                                        <span>강아지 용품 카테고리 한정</span>
+                                        <div class="coupon_popup_cont_inner_coupon_date">
+                                            <span class="coupon_popup_cont_inner_coupon_date_icon">D-5</span>
+                                            <span>2024. 06. 13까지</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_04">
+                                    <div class="coupon_popup_cont_inner_coupon_tit">
+                                        <h2>무료배달</h2>
+                                        <h3>자취러를 위한 무료배달 쿠폰</h3>
+                                    </div>
+                                    <div class="coupon_popup_cont_inner_coupon_txt">
+                                        <span>최대 20,000 적용</span>
+                                        <div class="coupon_popup_cont_inner_coupon_date">
+                                            <span class="coupon_popup_cont_inner_coupon_date_icon">D-7</span>
+                                            <span>2024. 06. 19까지</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

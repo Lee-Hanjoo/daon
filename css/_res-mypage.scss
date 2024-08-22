@@ -1,0 +1,390 @@
+@import "./_res";
+
+@include res('pc-s'){
+    .mypage{
+        .sub_container{
+            .contents{
+                .mypage_wrap{
+                    .tab_cont{
+                        .mypage_info{
+                            .mypage_info_btn{
+                                margin-top: 100px;
+                                button{
+                                    width: 220px;
+                                    height: 40px;
+                                    line-height: 42px;
+                                }
+                            }
+                            .mypage_info_member_delete{
+                                right: 12px;
+                            }
+                        }
+                        .mypage_reservation{
+                            table.mypage_reservation_list{
+                                tr{
+                                    th,td{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                            .mypage_reservation_cancel{
+                                h3{
+                                    margin: 60px 0 40px;
+                                    font-size: 20px;
+                                }
+                                table{
+                                    tr{
+                                        th{
+                                            width: 30%;
+                                            font-size: 18px;
+                                            padding: 20px
+                                        }
+                                        td{
+                                            padding: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res('tab'){
+    .mypage{
+        .sub_container{
+            .contents{
+                .mypage_wrap{
+                    .tab_cont{
+                        .mypage_info{
+                            .mypage_info_input{
+                                li{
+                                    ul{
+                                        height: 44px;
+                                        &.email_ul, &.name_ul{
+                                            .checkbox_wrap{
+                                                padding: 0 40px;
+                                                label{
+                                                    width: 280px;
+                                                }
+                                            }
+                                        }
+                                        &.phone_ul, &.birth_ul, &.coupon_ul{
+                                            height: 56px;
+                                            margin-bottom: 16px;
+                                        } 
+                                        p{
+                                            width: 140px;
+                                            font-size: 18px;
+                                        }
+                                        li{
+                                            width: 360px;
+                                            input{
+                                                height: 44px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .mypage_info_btn{
+                                .mypage_info_fix_btn{
+                                    margin-right: 8px;
+                                }
+                            }
+                            .mypage_info_member_delete{
+                                right: 8px;
+                            }
+                        }
+                        .mypage_reservation{
+                            table.mypage_reservation_list{
+                                tr{
+                                    padding: 16px 0;
+                                    th,td{
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .mypage_reservation_cancel{
+                                table{
+                                    tr{
+                                        td{
+                                            padding: 20px 30px 20px 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1056px){
+    .mypage{
+        .sub_container{
+            .contents{
+                .mypage_wrap{
+                    .tab_cont{
+                        .mypage_info{
+                            padding: 32px 20px;
+                            .mypage_info_input{
+                                width: 100%;
+                                li{
+                                    width: 100%;
+                                    margin-bottom: 0px;
+                                    ul{
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        margin-bottom: 18px;
+                                        &.email_ul, &.name_ul{
+                                            height: auto;
+                                            .checkbox_wrap{
+                                                padding: 0;
+                                                margin-left: -18px;
+                                                input{
+                                                    padding: 0;
+                                                }
+                                            }
+                                        }
+                                        &.phone_ul, &.birth_ul, &.coupon_ul{
+                                            height: auto;
+                                        } 
+                                        &.coupon_ul{
+                                            p{
+                                                display: none;
+                                            }
+                                        }
+                                        li{
+                                            width: 100%;
+                                            max-width: 100%;
+                                            input{
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                            &.coupon_box{
+                                                input{
+                                                    width: 100px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .mypage_info_btn{
+                                margin-top: 100px;
+                                button{
+                                    width: 180px;
+                                    height: 44px;
+                                    line-height: 46px;
+                                }
+                                .mypage_info_fix_btn{
+                                    a{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .mypage_reservation{
+                            table.mypage_reservation_list{
+                                tr{
+                                    th,td{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include res('mo-l'){
+    //mypage Mobile-Large Responsive start
+    .mypage{
+        .sub_container{
+            .contents{
+                .mypage_wrap{
+                    .tab_cont{
+                        .mypage_info{
+                            padding: 28px 16px;
+                            .mypage_info_input{
+                                li{
+                                    ul{
+                                        margin-bottom: 16px;
+                                        &.phone_ul, &.birth_ul, &.coupon_ul{
+                                            margin-bottom: 16px;
+                                        } 
+                                        p{
+                                            width: 140px;
+                                            font-size: 18px;
+                                        }
+                                        li{
+                                            &.coupon_box{
+                                                input{
+                                                    width: 88px;
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .mypage_info_btn{
+                                margin-top: 80px;
+                                button{
+                                    width: 160px;
+                                }
+                                .mypage_info_fix_btn{
+                                    a{
+                                        font-size: 16px;
+                                    }
+                                }
+                                .mypage_info_cancel_btn{
+                                    a{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            .mypage_info_member_delete{
+                                width: 60px;
+                                right: 4px;
+                                .mypage_info_member_delete_btn{
+                                    a{
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .mypage_reservation{
+                            table.mypage_reservation_list{
+                                tr{
+                                    th,td{
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            .mypage_reservation_cancel{
+                                h3{
+                                    margin: 40px 0 20px;
+                                    font-size: 16px;
+                                }
+                                table{
+                                    tr{
+                                        th{
+                                            height: 40px;
+                                            font-size: 16px;
+                                        }
+                                        td{
+                                            ul{
+                                                li{
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include res('mo-s'){
+    //mypage Mobile-Small Responsive start
+    .mypage{
+        .sub_container{
+            .contents{
+                .mypage_wrap{
+                    .tab_cont{
+                        .mypage_info{
+                            padding: 20px 12px;
+                            .mypage_info_input{
+                                li{
+                                    ul{
+                                        &.email_ul, &.name_ul{
+                                            .checkbox_wrap{
+                                                span{
+                                                    font-size: 12px;
+                                                }
+                                                label{
+                                                    width: 230px;
+                                                }
+                                            }
+                                        }
+                                        p{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            .mypage_info_btn{
+                                button{
+                                    width: 120px;
+                                    height: 40px;
+                                    line-height: 42px;
+                                }
+                                .mypage_info_fix_btn{
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                        .mypage_reservation{
+                            table.mypage_reservation_list{
+                                tr{
+                                    padding: 12px 0;
+                                    th,td{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            .mypage_reservation_cancel{
+                                h3{
+                                    margin: 36px 0 16px;
+                                    font-size: 14px;
+                                }
+                                table{
+                                    tr{
+                                        th{
+                                            font-size: 14px;
+                                        }
+                                        td{
+                                            padding: 12px 16px;
+                                            ul{
+                                                li{
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

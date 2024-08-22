@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="login_common join">
+        <div class="logo_wrap">
+            <h1 class="logo" name="pop_btn">
+                <a href="#"></a>
+            </h1>
+            <h2 class="txt">
+                회원가입
+            </h2>
+        </div>
+        <div class="join_wrap">
+            <form action="http://127.0.0.1:5501/join_complete.html">
+                <div class="join_personal_info">
+                    <ul class="input_box">
+                        <li class="email_box">
+                            <label for="email"></label>
+                            <input id="email" type="email" autocomplete="email" placeholder="이메일" required>
+                            <button type="button" class="input_reset_btn input_btn"></button>
+                            <p class="error_msg"></p>
+                        </li>
+                        <li class="pw_box">
+                            <label for="password"></label>
+                            <input id="password" type="password" autocomplete="new-password" placeholder="비밀번호(영문/숫자/특문 조합 8~15자)" minlength="8" maxlength="15" required>
+                            <button type="button" class="input_eye_btn input_btn"></button>
+                            <button type="button" class="input_reset_btn input_btn"></button>
+                            <p class="error_msg"></p>
+                        </li>
+                        <li class="pw_check_box pw_box">
+                            <label for="pw_check"></label>
+                            <input id="pw_check" type="password" autocomplete="new-password" placeholder="비밀번호 확인" minlength="8" maxlength="15" required>
+                            <button type="button" class="input_eye_btn input_btn"></button>
+                            <button type="button" class="input_reset_btn input_btn"></button>
+                            <p class="error_msg"></p>
+                        </li>
+                        <li class="name_box">
+                            <label for="name"></label>
+                            <input id="name" type="text" autocomplete="name" placeholder="이름" minlength="2" maxlength="20" required>
+                            <button type="button" class="input_reset_btn input_btn"></button>
+                            <p class="error_msg"></p>
+                        </li>
+                        <li class="phone_verify">
+                            <div>
+                                <div class="phone_box"> 
+                                    <label for="phone"></label>
+                                    <input id="phone" type="tel" autocomplete="tel" placeholder="휴대폰 번호(-없이 입력)" minlength="10" maxlength="11"required>
+                                    <button type="button" class="input_reset_btn input_btn"></button>
+                                    
+                                </div>
+                                <div class="verify_btn">
+                                    <button type="button" class="blue_btn" disabled>인증번호</button>
+                                </div>
+                            </div>
+                            <p class="error_msg"></p>
+                        </li>
+                        <li class="verify_box">
+                            <label for="verify"></label>
+                            <input id="verify" type="text" placeholder="인증번호" minlength="6" maxlength="6" readonly required>
+                            <button type="button" class="input_reset_btn input_btn"></button>
+                            <p class="error_msg"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="join_agree checkbox_wrap">
+                    <div class="agree_checkbox">
+                        <div class="agree_all all">
+                            <input type="checkbox" class="checkbox" id="all_chk">
+                            <label for="all_chk"><i></i>전체 동의</label>
+                            <button type="button" class="toggle_btn"></button>
+                        </div>
+                        <ul class="agree_list checkbox_cont">
+                            <li class="agree_essential">
+                                <input type="checkbox" class="checkbox" id="age19" name="chk" required>
+                                <label for="age19"><i></i><p>만 19세 이상 <span>(필수)</span></p></label>
+                            </li>
+                            <li class="agree_essential">
+                                <input type="checkbox" class="checkbox" id="policy_service" name="chk" required>
+                                <label for="policy_service"><i></i><p>이용약관에 대한 동의 <span>(필수)</span></p></label>
+                                <a href="./sub_policy_service.html" class="view_all">전체보기</a>
+                            </li>
+                            <li class="agree_essential">
+                                <input type="checkbox" class="checkbox" id="policy_privacy" name="chk" required>
+                                <label for="policy_privacy"><i></i><p>개인정보 수집, 이용에 대한 동의 <span>(필수)</span></p></label>
+                                <a href="./sub_policy_privacy.html" class="view_all">전체보기</a>
+                            </li>
+                            <li class="agree_optional">
+                                <input type="checkbox" class="checkbox" id="personal_marketing" name="chk">
+                                <label for="personal_marketing"><i></i><p>개인정보 마케팅 활용 동의 <span>(선택)</span></p></label>
+                            </li>
+                            <li class="agree_optional">
+                                <input type="checkbox" class="checkbox" id="email_ads" name="chk">
+                                <label for="email_ads"><i></i><p>이메일 마케팅 수신 동의 <span>(선택)</span></p></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="join_optional_info alert">* 선택항목은 동의 없이 가입 가능합니다.</p>
+                </div>
+                <div class="join_join_btn">
+                    <a href="./join_complete.html">
+                        <button type="submit" class="blue_btn" disabled>가입완료</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 회원가입 팝업 -->
+    <div class="popup join">
+        <div class="popup_cont">
+            <div class="popup_top">
+                <button class="popup_close_btn"></button>
+            </div>
+            <div class="popup_inner">
+                <div class="join_popup_tit">
+                    <h3 class="join_popup_title">잠시만요!</h3>
+                    <h5 class="join_popup_sub_title">아직 회원가입이 끝나지 않았어요.</h5>
+                </div>
+                <div class="join_popup_txt">
+                    <p>회원가입을 완료하고<br>
+                        다온의 특별한 혜택을 만나보세요.</p>
+                </div>
+            </div>
+            <div class="popup_bottom_btn">
+                <button class="join_popup_btn_progress"><a href="#">계속 진행</a></button>
+                <button class="join_popup_btn_cancel"><a href="#">중단하기</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer class="footer">
+        Copyright@ 2015 다온펜션 All Rights Reserved.
+    </footer>
+</body>
+</html>

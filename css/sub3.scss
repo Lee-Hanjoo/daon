@@ -1,0 +1,155 @@
+// facilities 공통
+.facilities_common {
+  .sub_container {
+    .contents {
+    }
+  }
+}
+
+// pool
+.pool {
+  .sub_top {
+    background-image: url("../img/img_facilities_pool_0.jpg");
+  }
+}
+
+.facilities_common {
+  .sub_top {
+    background-image: url("../img/img_facilities_rooftop_0.jpg");
+  }
+  .sub_container {
+    .contents {
+      .sub3_contents {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .swiper {
+          .swiper-pagination {
+            left: 50%;
+            transform: translateX(-50%);
+            .swiper-pagination-bullet {
+              background: #2f2f2f;
+              &.swiper-pagination-bullet-active {
+                background: #efefef;
+              }
+            }
+          }
+        }
+
+        .facilities_img {
+          width: 66%;
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          
+         
+          a {
+            flex-shrink: 0;
+            img {
+              object-fit: cover;
+            .img:nth-last-of-type(1) {
+              position: absolute;
+            }
+            .img:nth-last-of-type(2) {
+              position: absolute;
+            }
+            .img:nth-last-of-type(3) {
+              position: absolute;
+            }
+            .img:nth-last-of-type(4) {
+              position: absolute;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+          }
+        }
+      }
+    }
+    .facilities_title {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .facilities_t {
+        p:nth-of-type(1) {
+          width: 88px;
+          height: 32px;
+          padding: 8px 12px;
+          font-size: 12px;
+          font-weight: 600;
+          white-space: nowrap;
+          background-color: #ddef73;
+          border-radius: 8px;
+          text-align: center;
+        }
+        p:nth-of-type(2) {
+          font-size: 40px;
+          margin: 12px 0px;
+          font-weight: 600;
+          
+        }
+        p:nth-of-type(3) {
+          font-size: 20px;
+          margin: 24 0px;
+        
+          
+        }
+      }
+      .facilities_s {
+        margin-top: auto;
+        font-size: 20px;
+
+        .facilities_s1 {
+          padding: 32px 32px 32px;
+          margin: 0 0 12px;
+          background-color: #efefef;
+          border-radius: 20px;
+          dt {
+            margin-bottom: 10px;
+            font-weight: 700;
+            &::before {
+              content: "●";
+              font-size: 0.5rem;
+              vertical-align: middle;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .facilities_bt {
+        a {
+          border: 2px solid #2f2f2f;
+          padding: 16px 26px 14px;
+          border-radius: 40px;
+          display: inline-block;
+          margin: 4px;
+
+          &::after {
+            content: url(../img/icon/icon_facilities_arrow.svg);
+            display: none;
+            vertical-align: middle;
+            padding-left: 8px;
+          }
+          &.active {
+            background-color: #2f2f2f;
+            color: white;
+            transition: 1s;
+            &::after {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// bbq
+.bbq {
+  .sub_top {
+    background-image: url("../img/img_facilities_bbq_0.jpg");
+  }
+}
+@import "_res-sub3";

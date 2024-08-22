@@ -1,0 +1,889 @@
+@import "_res";
+
+//=================================notice====================================
+//==================작업자: 허다영=========================================
+
+// pc 1500px
+@include res("pc-s") {
+  .notice {
+    .sub_top {
+      background-image: url("../img/img_community_notice_0.jpg");
+    }
+    .sub_container {
+      width: 100%;
+      margin: 0 auto;
+      .notice-1 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// with 1279
+@include res("tab") {
+}
+
+// with 1210px
+@media (max-width: 1024px) {
+  .notice {
+    .sub_container {
+      .title {
+        .desc {
+        }
+        .notice-1 {
+          td {
+          }
+          th:nth-of-type(1),
+          th:nth-of-type(2) {
+            font-size: 14px;
+          }
+          th:nth-child(3) {
+            display: none;
+          }
+          td:nth-child(1),
+          td:nth-child(2) {
+            font-size: 16px;
+          }
+          td:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .notice {
+    .sub_container {
+      .contents {
+        .title {
+          font-size: 20px;
+        }
+        .desc {
+          font-size: 16px;
+        }
+        table {
+          font-size: 14px;
+          .col_date {
+            width: 140px;
+          }
+
+          th {
+            font-size: 14px;
+          }
+
+          td {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 767
+
+@include res("mo-l") {
+}
+
+// with 480
+
+@include res("mo-s") {
+}
+
+//=================================notice inner====================================
+//==================작업자: 허다영=========================================
+
+// pc 1500px
+@include res("pc-s") {
+}
+
+// with 1279
+@include res("tab") {
+  .contents_notice {
+    justify-items: end;
+    padding: 150px 20px;
+
+    .notice_inner_1 {
+      text-align: center;
+      padding-bottom: 64px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .notice_list {
+    margin: 80px auto;
+    text-align: center;
+
+    a {
+      padding: 16px 68px;
+      border: #357ef1;
+      border-radius: 8px;
+      background-color: #357ef1;
+      color: white;
+      font-size: 24px;
+      display: inline-block;
+    }
+  }
+}
+
+// with 767
+
+@include res("mo-l") {
+  .notice {
+    .sub_container {
+      width: 100%;
+      margin: 0 auto;
+      .title {
+        font-size: 24px;
+      }
+      .desc {
+        font-size: 20px;
+      }
+      .notice-1 {
+      }
+    }
+  }
+}
+
+// with 480
+
+@include res("mo-s") {
+  .contents_notice {
+    justify-items: end;
+    padding: 150px 20px;
+
+    .notice_inner_1 {
+      text-align: center;
+      padding-bottom: 64px;
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .notice_inner_2 {
+      background-color: rgba(226, 226, 226, 0.26);
+      padding-top: 64px;
+      margin-bottom: 64px;
+      padding: 32px 44px 44px;
+      justify-items: center;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .notice_list {
+      margin: 80px auto;
+      text-align: center;
+
+      a {
+        padding: 16px 68px;
+        border: #357ef1;
+        border-radius: 8px;
+        background-color: #357ef1;
+        color: white;
+        font-size: 14px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+//=================================faq====================================
+//==================작업자: 허다영=========================================
+//1500px
+@include res("pc-s") {
+}
+
+// with 1279
+@include res("tab") {
+}
+
+// with 1210px
+@media (max-width: 1024px) {
+  .faq {
+    .sub_container {
+      .icon span {
+        white-space: nowrap;
+        position: absolute;
+        justify-items: center;
+        width: auto;
+        height: auto;
+        background: #484848;
+        color: white;
+        border-radius: 50px;
+        padding: 12px 12px;
+        top: -40px;
+        left: 0%;
+        display: none;
+        // transform: translateX(-50%);
+      }
+
+      .icon span:after {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 10%;
+        transform: translateX(-50%);
+        border-top: 20px solid #484848;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 0px solid transparent;
+      }
+    }
+    .desc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .contents {
+      .sub5_community_faq {
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          padding-bottom: 56px;
+
+          li {
+            width: 200px;
+            height: auto;
+            margin: 0 16px;
+            padding: 12px 32px;
+            border-radius: 50px;
+            text-align: center;
+            a {
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+        }
+        .abc {
+          margin: 0px auto;
+          align-items: center;
+          text-align: center;
+          font-size: 22px;
+          padding-bottom: 65px;
+          span {
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .faq {
+    .sub_container {
+      .title {
+        .icon {
+        }
+
+        .icon .img1 {
+        }
+
+        &:hover span {
+        }
+
+        .icon span {
+        }
+
+        .icon span:after {
+        }
+      }
+      .desc {
+        font-size: 22px;
+      }
+      .contents {
+        .sub5_community_faq {
+          ul {
+            li {
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+          .abc {
+            font-size: 20px;
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+        .faq_wrap {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// with 767
+
+@include res("mo-l") {
+  .faq {
+    .sub_container {
+      .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .icon {
+          position: relative;
+        }
+
+        .icon .img1 {
+          padding: 10px;
+        }
+
+        &:hover span {
+          display: block !important;
+        }
+      }
+      .desc {
+        font-size: 20px;
+      }
+      .contents {
+        .sub5_community_faq {
+          ul {
+            li {
+              width: 200px;
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+          .abc {
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 65px;
+          }
+        }
+        .faq_wrap {
+          display: flex;
+          flex-direction: column;
+          font-size: 20px;
+
+          .faq {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 20px;
+
+              .question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: solid 1px #afafaf;
+                border-bottom: solid 1px #afafaf;
+
+                padding: 10px;
+                cursor: pointer;
+
+                span {
+                  margin-right: 10px;
+                  padding: 8px 24px;
+                  border-radius: 50px;
+                  font-weight: bold;
+                }
+
+                button {
+                  background-color: transparent;
+                  border: none;
+                  cursor: pointer;
+                }
+              }
+
+              .answer {
+                padding: 26px;
+                background-color: #f1f1f1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .faq {
+    .sub_container {
+      .title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .icon {
+          position: relative;
+        }
+
+        .icon .img1 {
+          padding: 10px;
+        }
+
+        &:hover span {
+          display: block !important;
+        }
+      }
+      .desc {
+        font-size: 20px;
+      }
+      .contents {
+        .sub5_community_faq {
+          ul {
+            flex-direction: column;
+            padding-bottom: 0px;
+            li {
+              width: 200px;
+            }
+          }
+          .abc {
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 480
+
+@include res("mo-s") {
+  .faq {
+    .sub_container {
+      padding: 80px 0 80px;
+      .title {
+        .icon span {
+          white-space: nowrap;
+          position: absolute;
+          justify-items: center;
+          width: auto;
+          height: auto;
+          background: #484848;
+          color: white;
+          border-radius: 50px;
+          padding: 12px 12px;
+          top: -40px;
+          left: 0%;
+          display: none;
+          // transform: translateX(-50%);
+        }
+
+        .icon span:after {
+          content: "";
+          position: absolute;
+          top: 40px;
+          left: 10%;
+          transform: translateX(-50%);
+          border-top: 20px solid #484848;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 0px solid transparent;
+        }
+      }
+      .desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .contents {
+        .sub5_community_faq {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding-bottom: 24px;
+
+            li {
+              width: 200px;
+              height: auto;
+              margin: 4px 16px;
+              padding: 12px 32px;
+              border-radius: 50px;
+              text-align: center;
+
+              a {
+                font-size: 16px;
+                font-weight: 700;
+              }
+            }
+          }
+          .abc {
+            margin: 0px auto;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;          
+            span {
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//=================================review====================================
+//==================작업자: 허다영=========================================
+//1500px
+
+//1500px
+@include res("pc-s") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      .title {
+        padding-bottom: 70px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 30%;
+              height: 30%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 1279
+@include res("tab") {
+}
+
+// with 1210px
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 976px) {
+}
+
+// with 767
+
+@include res("mo-l") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      padding: 80px 0 80px;
+      .title {
+        font-size: 28px;
+        .desc {
+          font-size: 20px;
+        }
+        margin: 0px;
+        padding-bottom: 60px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 40%;
+              height: 40%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 480
+
+@include res("mo-s") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      padding: 80px 0 80px;
+      .title {
+        font-size: 20px;
+        .desc {
+          font-size: 16px;
+        }
+        margin: 0px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 40%;
+              height: 40%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//=================================review inner====================================
+//==================작업자: 허다영=========================================
+//1500px
+@include res("pc-s") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      .title {
+        padding-bottom: 70px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 30%;
+              height: 30%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 1279
+@include res("tab") {
+}
+
+// with 1210px
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 976px) {
+}
+
+// with 767
+
+@include res("mo-l") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      padding: 80px 0 80px;
+      .title {
+        font-size: 28px;
+        .desc {
+          font-size: 20px;
+        }
+        margin: 0px;
+        padding-bottom: 60px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 40%;
+              height: 40%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 480
+
+@include res("mo-s") {
+  .review {
+    .sub_top {
+      background-image: url("../img/img_community_review_0.jpg");
+    }
+
+    .sub_container {
+      padding: 80px 0 80px;
+      .title {
+        font-size: 20px;
+        .desc {
+          font-size: 16px;
+        }
+        margin: 0px;
+      }
+      .contents {
+        .images {
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 40%;
+              height: 40%;
+              margin: 10px;
+
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

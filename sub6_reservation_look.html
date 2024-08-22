@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/sub6.css">
+    <script src="./js/sub6.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="sub reservation_common look">
+        <!-- 서브페이지 상단 고정 영역 -->
+        <div class="sub_top">
+            <div class="dim"></div>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./sub6_reservation.html">RESERVATION</a></li>
+                    <li><a href="./sub6_reservation_look.html">예약조회</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub_container">
+            <h2 class="title">
+                예약조회
+                <span class="desc">다온펜션 예약현황을 조회해드릴게요.</span>
+            </h2>
+            <!-- 페이지 컨텐츠 내용 -->
+            <div class="contents">
+                <div class="btn_wrap">
+                    <button type="button" class="member not" id="IsNotMem" name="pop_btn">비회원 조회</button>
+                    <button type="button" class="member" id="isMem">회원 조회</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 비회원 조회 팝업 -->
+    <div class="popup non_member">
+        <div class="popup_cont">
+            <div class="popup_top">
+                <h3 class="popup_title">비회원 조회</h3>
+                <button class="popup_close_btn"></button>
+            </div>
+            <div class="popup_inner">
+                <!-- inner 안쪽에 팝업 내용 작업 -->
+                <div class="insert_non_mem_num">
+                    <p class="label">비회원 번호</p>
+                    <input type="text" class="non_mem_num_chk" placeholder="비회원 번호를 입력해주세요.">
+                    <button type="button" id="non_member_btn">조회</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/sub6.css">
+    <script src="./js/sub6.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="sub reservation_common step2">
+        <!-- 서브페이지 상단 고정 영역 -->
+        <div class="sub_top">
+            <div class="dim"></div>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./sub6_reservation_step1.html">RESERVATION</a></li>
+                    <li><a href="./sub6_reservation_step1.html">예약하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub_container">
+            <h2 class="title">
+                예약하기
+                <span class="desc">다온펜션에서 다양하고 감각적인 인테리어와 특별한 여유를 느껴보세요.</span>
+            </h2>
+            <!-- 페이지 컨텐츠 내용 -->
+            <div class="contents">
+                <div class="step_wrap">
+                    <ul class="step">
+                        <li class="complete">
+                            <a href="javascript:;" class="circle" 
+                                onclick="
+                                    if(confirm('입력한 정보가 사라집니다. 페이지를 이동하시겠습니까?')){
+                                        window.location.href='./sub6_reservation_step1.html';
+                                    }
+                                "
+                            >
+                                <span>1</span>
+                            </a>
+                            <p>객실 선택</p>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="circle">
+                                <span>2</span>
+                            </a>
+                            <p>정보 입력</p>
+                        </li>
+                        <li>
+                            <a href="#" class="circle">
+                                <span>3</span>
+                            </a>
+                            <p>예약 완료</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info_wrap">
+                    <div class="left">
+                        <div class="user_info">
+                            <ul class="input_list">
+                                <li>
+                                    <p class="label">성함</p>
+                                    <input type="text" placeholder="성함을 입력해주세요."/>
+                                </li>
+                                <li class="half">
+                                    <div>
+                                        <p class="label">이메일</p>
+                                        <input type="text" placeholder="이메일을 입력해주세요."/>
+                                    </div>
+                                    <div>
+                                        <p class="label">생년월일</p>
+                                        <input type="text" placeholder="생년월일을 입력해주세요."/>
+                                    </div>
+                                </li>
+                                <li class="tel_wrap">
+                                    <p class="label">휴대폰번호</p>
+                                    <div>
+                                        <input type="text" placeholder="휴대폰 번호를 입력해주세요."/>
+                                        <button type="button" class="send_btn">인증번호</button>
+                                    </div>
+                                    <input type="text" placeholder="인증번호 6자리를 입력해주세요." readonly/>
+                                </li>
+                                <li class="textarea_wrap">
+                                    <p class="label">요청사항</p>
+                                    <textarea name="comment" id="comment" placeholder="요청사항을 입력해주세요." rows="8"></textarea>
+                                </li>
+                            </ul>
+                            <div class="card_wrap">
+                                <div class="card_box">
+                                    <div class="card">
+                                        <div class="card_front">
+                                            <p>CREDIT CARD</p>
+                                            <div class="card_data">
+                                                <p class="num">**** **** **** ****</p>
+                                                <div class="name_wrap">
+                                                    <p class="name first">first</p>
+                                                    <p class="name last">lastname</p>
+                                                </div>
+                                                <div class="date_wrap">
+                                                    <p class="date month">00</p>
+                                                    <span>/</span>
+                                                    <p class="date year">00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_back">
+                                            <p class="cvc_num">***</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="input_list">
+                                    <li>
+                                        <p class="label">신용카드 번호</p>
+                                        <input type="text" class="card_num" placeholder="신용카드 번호 16자리를 입력해주세요." maxlength="19"/>
+                                    </li>
+                                    <li>
+                                        <p class="label">소유자 명</p>
+                                        <div class="input_wrap">
+                                            <input type="text" class="card_name first" placeholder="성" maxlength="8"/>
+                                            <input type="text" class="card_name last" placeholder="이름" maxlength="12"/>
+                                        </div>
+                                    </li>
+                                    <li class="half">
+                                        <div>
+                                            <p class="label">만료기한</p>
+                                            <div class="input_wrap">
+                                                <select name="card_date_month" class="card_date month">
+                                                    <option class="default" selected>월</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <input type="text" class="card_date year" placeholder="년" maxlength="2"/>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="label">보안번호(CVC)</p>
+                                            <input type="text" class="card_cvc" placeholder="보안번호" maxlength="3"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="alert">
+                                    <span>예약 보증을 위한 카드 정보입니다.</span>
+                                    <span>예약 카드 정보는 안전하게 보호되며, 실제 결제는 다온펜션 현장에서 진행됩니다.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="checkbox_wrap">
+                            <div class="all">
+                                <input type="checkbox" class="checkbox" id="all_chk">
+                                <label for="all_chk"><i></i>전체동의</label>
+                                <button type="button" class="toggle_btn"></button>
+                            </div>
+                            <div class="checkbox_cont">
+                                <input type="checkbox" class="checkbox" id="chk1" name="chk">
+                                <label for="chk1"><i></i>이용약관 및 취소규정 동의 (필수)</label>
+                                <input type="checkbox" class="checkbox" id="chk2" name="chk">
+                                <label for="chk2"><i></i>개인정보 수집 및 이용 목적 동의 (필수)</label>
+                                <input type="checkbox" class="checkbox" id="chk3" name="chk">
+                                <label for="chk3"><i></i>할인 혜택 및 프로모션 안내 동의 (선택)</label>
+                            </div>
+                        </div>
+                        <div class="right_mb_info">
+                            <ul class="data_list">
+                                <li>
+                                    <p class="label">투숙 기간</p>
+                                    <p class="data">
+                                        <span>
+                                            <em id="mb_start_date"></em> ~
+                                            <em id="mb_end_date"></em>
+                                        </span>
+                                        <span class="room_data">(객실 <em id="mb_room_data"></em>개)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="label">객실</p>
+                                    <p class="data mb_room_tag_num"></p>
+                                </li>
+                                <li>
+                                    <p class="label">투숙 인원</p>
+                                    <p class="data">성인 <span id="mb_adult_num"></span>, 어린이 <span id="mb_child_num"></span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sticky_menu">
+                            <ul class="data_list">
+                                <li>
+                                    <p class="label">투숙 기간</p>
+                                    <p class="data">
+                                        <span>
+                                            <em id="start_date"></em> ~
+                                            <em id="end_date"></em>
+                                        </span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="label">객실 수</p>
+                                    <p class="data"><span id="room_data"></span>개</p>
+                                </li>
+                                <li>
+                                    <p class="label">객실</p>
+                                    <p class="data room_tag_num"></p>
+                                </li>
+                                <li>
+                                    <p class="label">투숙 인원</p>
+                                    <p class="data">성인 <span id="adult_num"></span>, 어린이 <span id="child_num"></span></p>
+                                </li>
+                            </ul>
+                            <div class="price_wrap">
+                                <p>총 결제금액</p>
+                                <div class="price">
+                                    <em id="primary"></em>
+                                    <p id="sale"></p>
+                                </div>
+                            </div>
+                            <div class="payment_btn_wrap">
+                                <!-- <button type="button" class="payment_btn">
+                                    비회원 예약
+                                </button> -->
+                                <button type="button" class="payment_btn member" id="payment_btn" onclick="window.location.href='./sub6_reservation_step3.html'">
+                                    예약하기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_mb_menu">
+            <div class="price_wrap">
+                <p>총 결제금액</p>
+                <div class="price">
+                    <p id="mb_sale"></p>
+                </div>
+            </div>
+            <div class="payment_btn_wrap">
+                <!-- <button type="button" class="payment_btn">
+                    비회원 예약
+                </button> -->
+                <button type="button" class="payment_btn member" id="mb_payment_btn" onclick="window.location.href='./sub6_reservation_step3.html'">
+                    예약하기
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

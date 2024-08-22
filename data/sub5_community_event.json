@@ -1,0 +1,47 @@
+{
+  "event_page" :[
+    {
+      "id": 0,
+      "event_title" : "가평 칼봉산 짚라인 할인",
+      "event_startday" : "2024. 08. 01",
+      "event_lastday" : "2024. 08. 02"
+    },
+    {
+      "id" : 1,
+      "event_title" : "포토라인 이벤트",
+      "event_startday" : "2024. 08. 01",
+      "event_lastday" : "2024. 08. 02"
+    },
+    {
+      "id" : 2,
+      "event_title" : "홈페이지 예약시 할인",
+      "event_startday" : "2024. 08. 11",
+      "event_lastday" : "2024. 12. 31"
+    },
+    {
+      "id" : 3,
+      "event_title" : "리뷰 이벤트",
+      "event_startday" : "2024. 08. 08",
+      "event_lastday" : "2024. 12. 31"
+    },
+    {
+      "id" : 4,
+      "event_title" : "초특가 99.9% 할인",
+      "event_startday" : "2024. 05. 01",
+      "event_lastday" : "2024. 12. 31"
+    },
+    {
+      "id" : 5,
+      "event_title" : "단체 할인 이벤트",
+      "event_startday" : "2024. 07. 01",
+      "event_lastday" : "2024. 12. 01"
+
+    }
+    
+  ],
+  "event_inner" : {
+    "id" : 0,
+    "event_inner_text" : "안녕하세요 다온펜션 입니다.인스타그램 포토 라인 이벤트 진행중입니다.<br> 다온펜션에서 찍은 나만의 포토존을 인스타그램 #다온펜션 #나만의포토존 및  <br>@Daonofficial을 태그하여 게시글을 올려주세요. <br>선정된 우수작은 특별한 선물을 드립니다! <br>많은 참여 부탁드립니다.",
+    "event_inner_img" : "./img/img_sub5_2_event_inner_01"
+  }
+}

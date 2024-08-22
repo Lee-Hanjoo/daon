@@ -1,0 +1,310 @@
+@import "./_res-login";
+
+
+// 마이페이지
+.mypage{
+    .sub_top{
+        background: url("../img/img_sub_mypage.jpg") no-repeat center / cover;
+        .dim{
+            background-color: rgba(0,0,0,0.3);
+        }
+    }
+    .sub_container{
+        .contents{
+            width: 100%;
+            .mypage_wrap{
+                .mypage_tap_wrap{
+                    width: 100%;
+                }
+                .tab_cont{
+                    width: 100%;
+                    div{
+                        display: none;
+                        &.on{
+                            display: block;
+                        }
+                    }
+                    .mypage_info{
+                        width: 100%;
+                        padding: 40px 24px;
+                        position: relative;
+                        .mypage_info_input{
+                            li{
+                                ul{
+                                    @include inputbox;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 16px;
+                                    &.email_ul, &.name_ul{
+                                        .checkbox_wrap{
+                                            width: 330px;
+                                            height: 40px;
+                                            border: none;
+                                            padding: 0px 40px;
+                                            overflow: visible;
+                                            span{
+                                                font-size: 16px;
+                                                color: #afafaf;
+                                            }
+                                            .checkbox,label{
+                                                display: flex;
+                                                border: none;
+                                                background-color: transparent;
+                                            }
+                                            label{
+                                                width: 330px;
+                                            }
+                                        }
+                                    }
+                                    &.phone_ul, &.birth_ul, &.coupon_ul{
+                                        padding-bottom: 16px;
+                                        border-bottom: 2px solid #efefef;
+                                    } 
+                                    p{
+                                        width: 170px;
+                                        font-size: 20px;
+                                        color: #2f2f2f;
+                                    }
+                                    li{
+                                        &.email_box{
+                                            border-radius: 8px;
+                                            label{background-image: url(../img/icon/icon_mail_grey.svg)}
+                                            input{background-color: #EFEFEF;}
+                                        }
+                                        &.pw_box{
+                                            label{background-image: url(../img/icon/icon_lock.svg)}
+                                        }
+                                        &.pw_check_box{
+                                            label{background-image: url(../img/icon/icon_lock.svg)}
+                                        }
+                                        &.name_box{
+                                            label{background-image: url(../img/icon/icon_person.svg)}
+                                        }
+                                        &.phone_box{
+                                            label{background-image: url(../img/icon/icon_phone.svg)}
+                                        }
+                                        &.birth_box{
+                                            label{background-image: url(../img/icon/icon_calendar.svg)}
+                                        }
+                                        &.coupon_box{
+                                            input{
+                                                width: 116px;
+                                                height: 40px;
+                                                line-height: 38px;
+                                                padding: 2px 0;
+                                                font-size: 16px;
+                                                background-color: #357EF1;
+                                                border: none;
+                                                border-radius: 8px;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .mypage_info_btn{
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                            margin-top: 104px;
+                            button{
+                                width: 249px;
+                                height: 46px;
+                                border-radius: 8px;
+                            }
+                            .mypage_info_fix_btn{
+                                background-color: #357EF1;
+                                border: none;
+                                margin-right: 12px;
+                                a{
+                                    color: #fff; 
+                                    font-size: 18px;
+                                }
+                            }
+                            .mypage_info_cancel_btn{
+                                border: 1px solid #AFAFAF;
+                                a{
+                                    color: #2f2f2f;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .mypage_info_member_delete{
+                            width: 80px;
+                            height: 20px;
+                            display: block;
+                            position: absolute;
+                            right: 24px;
+                            .mypage_info_member_delete_btn{
+                                a{
+                                    color: #afafaf;
+                                    border-bottom: 1px solid #afafaf;
+                                    font-size: 16px;
+                                    padding: 2px;
+                                }
+                            }           
+                        }
+                    }
+                    .mypage_reservation{
+                        width: 100%;
+                        table.mypage_reservation_list{
+                            width: 100%;
+                            tr{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding: 24px 0;
+                                border-bottom: 2px solid #EFEFEF;
+                                &:nth-child(4){
+                                    td{
+                                        color: #AFAFAF;
+                                    }
+                                }
+                                th{
+                                    font-weight: 700;
+                                }
+                                th,td{
+                                    font-size: 20px;
+                                    color: #2f2f2f;
+                                    text-align: center;
+                                    &:nth-child(1){width: 25%; padding-right: 10px;}
+                                    &:nth-child(2){width: 15%;}
+                                    &:nth-child(3){width: 10%;}
+                                    &:nth-child(4){width: 25%;}
+                                    &:nth-child(5){width: 25%;}
+                                }
+                            }
+                        }
+                        .mypage_reservation_cancel{
+                            width: 100%;
+                            h3{
+                                margin: 60px 0;
+                                font-size: 24px;
+                                font-weight: 700;
+                            }
+                            table{
+                                width: 100%;
+                                tr{
+                                    th{
+                                        width: 420px;
+                                        height: 80px;
+                                        font-size: 20px;
+                                        border: 1px solid #AFAFAF;
+                                        padding: 30px 0 30px 40px;
+                                        text-align: left;
+                                    }
+                                    td{
+                                        border: 1px solid #AFAFAF;
+                                        padding: 30px 0 30px 80px;
+                                        ul{
+                                            li{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 쿠폰 팝업
+.popup {
+    &.coupon {
+      .popup_cont {
+        max-width: 514px;
+        padding-bottom: 40px;
+        .popup_title {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .popup_inner {
+          width: 434px;
+          height: 544px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 20px;
+          box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          .coupon_popup_cont_inner{
+            width: 100%;
+            >div {
+              width: 394px;
+              height: 117px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #fff;
+              border: 1px solid #efefef;
+              border-radius: 8px;
+              box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+              &:not(:last-of-type) {
+                margin-bottom: 12px;
+              }
+            }
+            .coupon_popup_cont_inner_coupon_02{
+                .coupon_popup_cont_inner_coupon_txt{
+                    .coupon_popup_cont_inner_coupon_date{
+                        .coupon_popup_cont_inner_coupon_date_icon{
+                            background-color: #FF0F0F;
+                        }
+                    }
+                }
+            }
+            .coupon_popup_cont_inner_coupon_tit{
+                h2{
+                    color: #357EF1;
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+                h3{
+                    color: #2f2f2f;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .coupon_popup_cont_inner_coupon_txt{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                span{
+                    font-size: 14px;
+                    color: #AFAFAF;
+                }
+                .coupon_popup_cont_inner_coupon_date{
+                    display: flex;
+                    .coupon_popup_cont_inner_coupon_date_icon{
+                        width: 31px;
+                        height: 18px;
+                        border-radius: 4px;
+                        background: #357EF1;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 8px;
+                        font-weight: 700;
+                        padding: 3px 8px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+@import "./res-mypage";

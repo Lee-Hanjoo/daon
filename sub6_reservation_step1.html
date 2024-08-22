@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] datepicker -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/sub6.css">
+    <script src="./js/sub6.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="sub reservation_common step1">
+        <!-- 서브페이지 상단 고정 영역 -->
+        <div class="sub_top">
+            <div class="dim"></div>
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./sub6_reservation_step1.html">RESERVATION</a></li>
+                    <li><a href="./sub6_reservation_step1.html">예약하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub_container">
+            <h2 class="title">
+                예약하기
+                <span class="desc">다온펜션에서 다양하고 감각적인 인테리어와 특별한 여유를 느껴보세요.</span>
+            </h2>
+            <!-- 페이지 컨텐츠 내용 -->
+            <div class="contents">
+                <div class="step_wrap">
+                    <ul class="step">
+                        <li class="active">
+                            <a href="#" class="circle">
+                                <span>1</span>
+                            </a>
+                            <p>객실 선택</p>
+                        </li>
+                        <li>
+                            <a href="#" class="circle">
+                                <span>2</span>
+                            </a>
+                            <p>정보 입력</p>
+                        </li>
+                        <li>
+                            <a href="#" class="circle">
+                                <span>3</span>
+                            </a>
+                            <p>예약 완료</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="data_area">
+                    <ul class="date_person">
+                        <li class="data">
+                            <p class="label">투숙기간</p>
+                            <div class="input_wrap">
+                                <div class="date in">
+                                    <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                        <input id="startpicker-input" type="text" aria-label="Date" readonly>
+                                        <div id="startpicker-container" style="margin-left: -1px;"></div>
+                                    </div>
+                                    <span title="day"></span>
+                                </div>
+                                <span class="sign">~</span>
+                                <div class="date out">
+                                    <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                        <input id="endpicker-input" type="text" aria-label="Date" readonly>
+                                        <div id="endpicker-container" style="margin-left: -1px;"></div>
+                                    </div>
+                                    <span title="day"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="room">
+                            <p class="label">객실</p>
+                            <div class="input_wrap">
+                                <input type="text" value="1"/>
+                                <div class="btn_wrap">
+                                    <button type="button" class="minus"></button>
+                                    <button type="button" class="plus"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="adult">
+                            <p class="label">성인</p>
+                            <div class="input_wrap">
+                                <input type="text" value="2"/>
+                                <div class="btn_wrap">
+                                    <button type="button" class="minus"></button>
+                                    <button type="button" class="plus"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="child">
+                            <p class="label">어린이</p>
+                            <div class="input_wrap">
+                                <input type="text" value="0"/>
+                                <div class="btn_wrap">
+                                    <button type="button" class="minus"></button>
+                                    <button type="button" class="plus"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="room_list_wrap love"></ul>
+                    <ul class="room_list_wrap only"></ul>
+                </div>
+                <div class="next_wrap">
+                    <button type="button" class="next_btn info">정보 입력</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .tui-datepicker .tui-is-blocked {
+            & + .tui-is-selected {
+                border-radius: 50% 0 0 50%;
+            } 
+        }
+        .tui-is-selected-range {
+            & + .tui-is-selected {
+                border-radius: 0 50% 50% 0;
+            }
+        }
+    </style>
+</body>
+</html>

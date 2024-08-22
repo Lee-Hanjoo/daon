@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    <!-- [↓] datepicker -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+    <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <!-- [↓] kakao map api -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=968c94e07185af1f9c1b59c3f1b85383"></script>
+    <script src="./js/map.js"></script>
+</head>
+<body>
+    <!-- 메인 -->
+    <main class="main">
+        <div class="container">
+            <!-- 비주얼 -->
+            <section class="visual video_wrap">
+                <div class="dim"></div>
+                <iframe class="video" src="https://player.vimeo.com/video/744069451?background=1"  frameborder="0" title="조용하고 프라이빗한 호텔" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe>
+                <div class="quick_menu">
+                    <ul>
+                        <li>
+                            <span>CHECK IN</span>
+                            <div class="date in">
+                                <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                    <input id="startpicker-input" type="text" aria-label="Date" readonly>
+                                    <div id="startpicker-container" style="margin-left: -1px;"></div>
+                                </div>
+                                <span title="day"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span>CHECK OUT</span>
+                            <div class="date out">
+                                <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                    <input id="endpicker-input" type="text" aria-label="Date" readonly>
+                                    <div id="endpicker-container" style="margin-left: -1px;"></div>
+                                </div>
+                                <span title="day"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_wrap">
+                                <label for="room">ROOM</label>
+                                <select name="room_select" id="room" defaultValue="1">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_wrap">
+                                <label for="adult">ADULT</label>
+                                <select name="adult_select" id="adult" defaultValue="2">
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="select_wrap">
+                                <label for="child">CHILD</label>
+                                <select name="child_select" id="child" defaultValue="0">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <button type="button" class="search_btn"  onclick="window.location.href='./sub6_reservation_step1.html'"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- 객실안내 -->
+            <section class="section room">
+                <div class="inner">
+                    <h2 class="title">
+                        <span>ROOM</span>
+                        객실안내
+                    </h2>
+                    <div class="more_btn"><a href="./sub2_room_love_you.html">VIEW MORE</a></div>
+                    <div class="contents">
+                        <div class="swiper room_list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/img_sub2_room_love101_01.jpg" alt="love you 101호">
+                                    <a href="./sub2_room_love_you.html" class="room_info">
+                                        <div class="txt">
+                                            <p>LOVE YOU #101</p>
+                                            <span>따뜻하지만 모던한 인테리어 안에서 아늑한 휴식을 누릴 수 있습니다.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/img_sub2_room_love201_02.jpg" alt="love you 201호">
+                                    <a href="./sub2_room_love_you.html" class="room_info">
+                                        <div class="txt">
+                                            <p>LOVE YOU #201</p>
+                                            <span>다채로운 쉼을 선물하는 최고급 타워형 객실에서 휴식을 만끽하세요.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/img_sub2_room_only101_01.jpg" alt="only you 101호">
+                                    <a href="./sub2_room_only_you.html" class="room_info">
+                                        <div class="txt">
+                                            <p>ONLY YOU #101</p>
+                                            <span>단순함속의 세련됨, 단아함속의 편안함을 느끼면서 즐거운 시간을 보내세요.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/img_sub2_room_only201_01.jpg" alt="only you 201호">
+                                    <a href="./sub2_room_only_you.html" class="room_info">
+                                        <div class="dim"></div>
+                                        <div class="txt">
+                                            <p>ONLY YOU #201</p>
+                                            <span>넓은 실내로 고객님 마음에 즐거움을 더하며, 여유로운 시간을 즐길 수 있습니다.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper_btn_wrap">
+                                <div class="swiper-button-next room_next"></div>
+                                <div class="swiper-button-prev room_prev"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 시설안내 -->
+            <section class="section facilities">
+                <div class="inner">
+                    <h2 class="title">
+                        <span>FACILITIES</span>
+                        시설안내
+                    </h2>
+                    <div class="more_btn"><a href="./sub3_facilities.html">VIEW MORE</a></div>
+                    <div class="contents">
+                        <ul class="facilities_list">
+                            <li class="pool on">
+                                <a href="#">
+                                    <div class="dim"></div>
+                                    <div class="box">
+                                        <p>SWIMMING POOL</p>
+                                        <div class="bar">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="rooftop">
+                                <a href="#">
+                                    <div class="dim"></div>
+                                    <div class="box">
+                                        <p>ROOF TOP</p>
+                                        <div class="bar">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="bbq">
+                                <a href="#">
+                                    <div class="dim"></div>
+                                    <div class="box">
+                                        <p>BARBECUE</p>
+                                        <div class="bar">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 주변안내 -->
+            <section class="section around_spot">
+                <div class="inner">
+                    <h2 class="title">
+                        <span>AROUND SPOT</span>
+                        주변 관광지
+                    </h2>
+                    <div class="more_btn"><a href="./sub4_around_spot.html">VIEW MORE</a></div>
+                    <p class="desc">
+                        펜션 근처 남이섬, 아침고요수목원, 쁘띠프랑스 등<br/>다양한 볼거리와 힐링 스팟이 위치하고있습니다.<br/>다온에서의 즐거운 추억을 만들어보세요!
+                    </p>
+                    <div class="contents">
+                        <ul class="spot_list">
+                            <li>
+                                <a href="./sub4_around_spot.html">
+                                    <img src="./img/img_around_01.jpg" alt="남이섬">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./sub4_around_spot.html">
+                                    <img src="./img/img_around_02.jpg" alt="아침고요수목원">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./sub4_around_spot.html">
+                                    <img src="./img/img_around_03.jpg" alt="쁘띠프랑스">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 이벤트 -->
+            <section class="section event">
+                <div class="inner">
+                    <h2 class="title">
+                        <span>EVENT</span>
+                        이벤트
+                    </h2>
+                    <div class="more_btn"><a href="./sub5_community_event.html">VIEW MORE</a></div>
+                    <div class="contents">
+                        <div class="swiper event_list">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="swiper_btn_wrap">
+                                <div class="swiper-button-next event_next"></div>
+                                <div class="swiper-button-prev event_prev"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 오시는 길 -->
+            <section class="section contact">
+                <div class="inner">
+                    <h2 class="title">
+                        <span>CONTACT</span>
+                        오시는 길
+                    </h2>
+                    <div class="more_btn"><a href="./sub1_about_contact.html">VIEW MORE</a></div>
+                    <div class="contents">
+                        <div id="map" class="contact_map map"></div>
+                        <div class="box_wrap">
+                            <div class="tab_wrap">
+                                <ul class="tab box">
+                                    <li class="on">
+                                        위치안내
+                                    </li>
+                                    <li>대중교통</li>
+                                </ul>
+                                <div class="tab_cont">
+                                    <ul class="location on">
+                                        <li>경기도 가평군 가평읍 경반안로 357-187</li>
+                                        <li>031-581-0662</li>
+                                        <li>daonpension@daon.com</li>
+                                    </ul>
+                                    <ul class="transport">
+                                        <li><span>71-4</span>첫차 06:50 막차 18:45 배차간격 매일 8회</li>
+                                        <li><span>가평역</span>1번 출구, 경반리윗말역 하차 후 도보 20분</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pick_wrap">
+                                <p>픽업서비스</p>
+                                <ul>
+                                    <li>조은마트에서 3만원 이상 결제 후 영수증 지참 시,&nbsp;&nbsp;<span>무료 픽업서비스 제공</span></li>
+                                    <li>010-3923-0662</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 이용후기 -->
+            <section class="section review">
+                <div class="inner">
+                    <div class="contents">
+                        <ul class="review_list">
+                        </ul>
+                        <ul class="review_list clone">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <style>
+        .tui-datepicker .tui-is-blocked {
+            & + .tui-is-selected {
+                border-radius: 50% 0 0 50%;
+            } 
+        }
+        .tui-is-selected-range {
+            & + .tui-is-selected {
+                border-radius: 0 50% 50% 0;
+            }
+        }
+    </style>
+</body>
+</html>

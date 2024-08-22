@@ -1,0 +1,481 @@
+@charset "UTF-8";
+/* 변동사항(확인 후 삭제하셔도 됩니다!)--------------------------------------
+  모든 로그인 관련 페이지는 모바일 기준으로 기본 디자인을 잡았기 때문에 디자인적 변동사항이 적습니다.
+  세부사항은 아래와 같습니다.
+pc-s: 없음
+tab: 
+- .login_common
+        ㄴ .logo_wrap : 로고-텍스트묶음의 하단 간격 조정 56->48px
+mo-l:
+    - .login_common : 
+        ㄴ 기본 좌우 패딩 16px
+        ㄴ .logo_wrap 로고-텍스트 간 간격 줄임(40->36px)
+        ㄴ .logo_wrap 로고-텍스트의 텍스트 폰트사이즈 줄임(32->24px)
+        ㄴ 인풋박스 width 크게(400->480px)
+        ㄴ 버튼 width 크게(400->480px)
+    - .login : 
+        ㄴ 그림자 박스 제거
+        ㄴ 인풋박스 width 크게 (400->480px)
+        ㄴ 버튼 width 크게(400 -> 480px)
+        ㄴ 로그인-회원가입버튼 간격(60->40px)
+    - .join : 
+        ㄴ 그림자 박스 제거
+        ㄴ 인풋박스 width 크게
+        ㄴ 버튼 width(480->400px)
+        ㄴ 인풋박스-체크박스 간 간격 조정 (16->48px)
+        ㄴ 전체 동의 배경색 제거, border를 추가해 영역 구분
+        ㄴ .join_optional_info(*선택항목은 동의없이~) 상단 마진 삭제
+    - .join_complete
+        ㄴ 로고-체크-텍스트와 컨텐츠 간 간격 조정(48->24px)
+        ㄴ mo-l .login_common의 3번째 항목: .logo_wrap 간격 늘림(36->48px)
+        ㄴ 체크 아이콘 사이즈 작게(80x80 -> 60x60)
+        ㄴ.greeting p (환영합~) : 폰트 사이즈 축소 (24->20px)
+        ㄴ.greeting p (환영합~)와 버튼 간격 축소 (100->80px)
+        ㄴ 버튼 max-width 줄임(240->200px)
+mo-s: 
+    - .login_common : 
+        ㄴ 텍스트 폰트사이즈 줄임(24->20px)
+    - .login : 
+        ㄴ 없음
+    - .join_complete 
+        ㄴ.greeting p (환영합~)와 버튼 간격 축소 (80->40px)
+        ㄴ .greeting p (환영합~) : 폰트 사이즈 축소 (20->16px)
+        ㄴ 버튼 width 고정(깨짐 방지)(160px)
+*/
+/* [↑] 상단 나중에 작업 완료 후 삭제 [↑] */
+@media (max-width: 1279px) {
+  body .login_common .logo_wrap {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 767px) {
+  body .login_common {
+    padding: 100px 16px 0;
+  }
+  body .login_common .logo_wrap .txt {
+    margin-top: 36px;
+    font-size: 24px;
+  }
+  body .login .login_wrap {
+    width: 100%;
+    max-width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  body .login .login_wrap .login_daon .login_login_daon {
+    margin-bottom: 40px;
+  }
+  body .join .join_wrap .join_personal_info {
+    width: 100%;
+    max-width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 48px;
+  }
+  body .join .join_wrap .join_agree .agree_checkbox {
+    width: 100%;
+    max-width: 480px;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  body .join .join_wrap .join_agree .agree_checkbox .agree_all {
+    background-color: transparent;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px dotted #efefef;
+  }
+  body .join .join_wrap .join_agree .join_optional_info {
+    margin-top: 0;
+  }
+  body .join_complete .logo_wrap {
+    margin-bottom: 24px;
+  }
+  body .join_complete .logo_wrap .txt {
+    margin-top: 48px;
+  }
+  body .join_complete .logo_wrap .txt::before {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/icon/icon_check_big_mobile.svg);
+  }
+  body .join_complete .join_complete_wrap .greeting {
+    margin-bottom: 80px;
+  }
+  body .join_complete .join_complete_wrap .greeting p {
+    font-size: 20px;
+  }
+  body .join_complete .join_complete_wrap .join_complete_btn a button {
+    max-width: 200px;
+  }
+}
+@media (max-width: 479px) {
+  body .login_common .logo_wrap .txt {
+    font-size: 20px;
+  }
+  body .join_complete .join_complete_wrap .greeting {
+    margin-bottom: 40px;
+  }
+  body .join_complete .join_complete_wrap .greeting p {
+    font-size: 16px;
+  }
+  body .join_complete .join_complete_wrap .join_complete_btn a button {
+    width: 160px;
+  }
+}
+.login_common {
+  width: 100%;
+  min-height: 100vh;
+  padding: 160px 0;
+}
+.login_common .logo_wrap {
+  margin-bottom: 56px;
+}
+.login_common .logo_wrap .logo {
+  margin: 0 auto;
+}
+.login_common .logo_wrap .logo a {
+  background-image: url("../img/logo.svg");
+}
+.login_common .logo_wrap .txt {
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.login_common .blue_btn {
+  width: 100%;
+  max-width: 480px;
+  padding: 16px 16px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #357EF1;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.login_common .input_box li {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+}
+.login_common .input_box li label {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 16px;
+  top: 28px;
+  transform: translateY(-50%);
+}
+.login_common .input_box li input {
+  width: 100%;
+  padding: 16px 36px;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+.login_common .input_box li input.active {
+  border-color: #ff0f0f;
+}
+.login_common .input_box li .input_btn {
+  visibility: hidden;
+  position: absolute;
+  top: 28px;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+.login_common .input_box li .input_reset_btn {
+  width: 16px;
+  height: 16px;
+  right: 8px;
+  background-image: url(../img/icon/icon_x_circle.svg);
+}
+.login_common .input_box li .input_eye_btn {
+  width: 20px;
+  height: 20px;
+  right: 32px;
+  background-image: url(../img/icon/icon_eye.svg);
+}
+.login_common .input_box li .input_eye_btn.hide {
+  background-image: url(../img/icon/icon_eye_closed.svg);
+}
+.login_common .input_box li input.hasValue ~ .input_reset_btn,
+.login_common .input_box li input.hasValue ~ .input_eye_btn {
+  visibility: visible;
+}
+.login_common .input_box .pw_box input {
+  padding: 16px 64px 16px 36px;
+}
+.login_common .email_box label {
+  background-image: url(../img/icon/icon_mail_grey.svg);
+}
+.login_common .pw_box label {
+  background-image: url(../img/icon/icon_lock.svg);
+}
+.login_common .name_box label {
+  background-image: url(../img/icon/icon_person.svg);
+}
+.login_common .phone_box label {
+  background-image: url(../img/icon/icon_phone.svg);
+}
+.login_common .verify_box label {
+  background-image: url(../img/icon/icon_phone.svg);
+}
+.login_common .error_msg {
+  display: none;
+}
+.login_common .error_msg.active {
+  padding: 4px 20px;
+  display: block;
+  color: #ff0f0f;
+}
+
+.login .login_wrap {
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+  margin: 0 auto;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 72px 40px 48px;
+}
+.login .login_wrap .login_daon {
+  margin-bottom: 40px;
+}
+.login .login_wrap .login_daon .login_login_daon {
+  margin-bottom: 60px;
+}
+.login .login_wrap .login_daon .login_login_daon .input_box {
+  margin-bottom: 24px;
+}
+.login .login_wrap .login_daon .login_login_daon .input_box .email_box {
+  margin-bottom: 12px;
+}
+.login .login_wrap .login_daon .login_join_daon .white_btn {
+  width: 100%;
+  max-width: 480px;
+  padding: 16px 16px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #357EF1;
+  border-radius: 8px;
+  color: #357EF1;
+}
+.login .login_wrap .login_sns .login_login_sns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.login .login_wrap .login_sns .login_login_sns li a button {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login .login_wrap .login_sns .login_login_sns li a .kakao {
+  background-color: #fff500;
+  background-image: url(../img/icon/icon_kakao.svg);
+}
+.login .login_wrap .login_sns .login_login_sns li a .naver {
+  background-color: #06CC80;
+  background-image: url(../img/icon/icon_naver.svg);
+}
+.login .login_wrap .login_sns .login_login_sns li a .google {
+  background-color: #ffffff;
+  border: 1px solid #afafaf;
+  background-image: url(../img/icon/icon_google.svg);
+}
+
+.join button:disabled {
+  background-color: #afafaf;
+}
+.join .join_wrap .join_personal_info {
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+  margin: 0 auto;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 72px 40px;
+  margin-bottom: 16px;
+}
+.join .join_wrap .join_personal_info .input_box li:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+.join .join_wrap .join_personal_info .phone_verify div {
+  max-width: 480px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.join .join_wrap .join_personal_info .phone_verify div .phone_box {
+  width: 70%;
+}
+.join .join_wrap .join_personal_info .phone_verify div .phone_box .input_reset_btn {
+  right: 33%;
+}
+.join .join_wrap .join_personal_info .phone_verify div .verify_btn {
+  width: 30%;
+}
+.join .join_wrap .join_personal_info .phone_verify div .verify_btn button {
+  white-space: nowrap;
+}
+.join .join_wrap .join_agree {
+  width: 100%;
+  padding: 0;
+  border: none;
+}
+.join .join_wrap .join_agree .agree_checkbox {
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+  margin: 0 auto;
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.join .join_wrap .join_agree .agree_checkbox input {
+  display: none;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_all {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list {
+  padding: 12px 24px;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list li {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list li label i {
+  min-width: 24px;
+  min-height: 24px;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list li .view_all {
+  color: #afafaf;
+  white-space: nowrap;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list .agree_optional label p {
+  color: #afafaf;
+}
+.join .join_wrap .join_agree .agree_checkbox .agree_list .agree_optional label span {
+  color: #afafaf;
+}
+.join .join_wrap .join_agree .join_optional_info {
+  width: 100%;
+  max-width: 480px;
+  margin: 16px auto 0;
+  text-align: right;
+}
+.join .join_wrap .join_join_btn {
+  margin-top: 40px;
+  text-align: center;
+}
+.join .join_wrap .join_join_btn a {
+  text-align: center;
+}
+
+.join_complete {
+  margin-bottom: 0;
+}
+.join_complete .logo_wrap .txt {
+  margin-top: 68px;
+}
+.join_complete .logo_wrap .txt::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: block;
+  background-image: url(../img/icon/icon_check_big.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.join_complete .join_complete_wrap .greeting {
+  margin-bottom: 100px;
+}
+.join_complete .join_complete_wrap .greeting p {
+  font-size: 24px;
+  text-align: center;
+}
+.join_complete .join_complete_wrap .greeting p span {
+  font-size: inherit;
+}
+.join_complete .join_complete_wrap .join_complete_btn {
+  text-align: center;
+}
+.join_complete .join_complete_wrap .join_complete_btn a button {
+  max-width: 240px;
+}
+
+.popup.join .popup_cont {
+  width: 460px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.popup.join .popup_cont .popup_inner {
+  width: 100%;
+  padding-top: 0;
+}
+.popup.join .popup_cont .popup_inner .join_popup_tit {
+  text-align: center;
+}
+.popup.join .popup_cont .popup_inner .join_popup_tit .join_popup_title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #357EF1;
+  margin-bottom: 12px;
+}
+.popup.join .popup_cont .popup_inner .join_popup_tit .join_popup_sub_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+.popup.join .popup_cont .popup_inner .join_popup_txt {
+  text-align: center;
+  margin-top: 32px;
+}
+.popup.join .popup_cont .popup_inner .join_popup_txt p {
+  font-size: 16px;
+  color: #2f2f2f;
+}
+.popup.join .popup_cont .popup_bottom_btn {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+.popup.join .popup_cont .popup_bottom_btn button {
+  width: 184px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  text-align: center;
+}
+.popup.join .popup_cont .popup_bottom_btn button a {
+  color: #fff;
+}
+.popup.join .popup_cont .popup_bottom_btn .join_popup_btn_progress {
+  background-color: #357EF1;
+  margin-right: 12px;
+}
+.popup.join .popup_cont .popup_bottom_btn .join_popup_btn_cancel {
+  background-color: #AFAFAF;
+}

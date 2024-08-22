@@ -1,0 +1,250 @@
+@mixin vectoricon($f, $a) {
+  width: $f;
+  height: $a;
+
+  p {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  span {
+    text-align: center;
+    display: block;
+    @content;
+  }
+}
+
+@keyframes contentsbox {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+// sub page
+.sub {
+  .sub_top {
+    background: url("../img/img_sub2_room_header.jpg") no-repeat center / cover;
+  }
+
+  .contents {
+    width: 100%;
+    opacity: 1;
+    animation: contentsbox 2s cubic-bezier(0.000, 0.920, 0.275, 0.980) normal;
+    position: relative;
+
+    .main_box {
+      width: 100%;
+      display: flex;
+      position: relative;
+      margin-top: 68px;
+
+
+      .room_content {
+        width: 100%;
+
+        .main_box2 {
+          width: 100%;
+          display: flex;
+          position: relative;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #efefef;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+          }
+
+          .room_list {
+            width: calc(100% - 570px);
+            height: calc(100% - 6px);
+            margin: 0;
+          }
+        }
+      }
+
+      .all_text {
+        width: calc(100% - 1102px);
+        margin-top: 114px;
+        margin-left: 72px;
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        li {
+          display: flex;
+        }
+        p:nth-of-type(1) {
+          font-weight: bold;
+          margin-top: 8px;
+        }
+        p:nth-of-type(2) {
+          margin-left: 32px;
+          margin-top: 8px;
+        }
+      }
+      button {
+        margin-top: 48px;
+        border: 1px solid #2f2f2f;
+        padding: 17px 46px;
+        border-radius: 8px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: #357EF1;
+        color: white;
+        border-color: #357ef1;
+      }
+      .contour3 {
+        width: 1400px;
+        height: 2px;
+        background-color: #efefef;
+        margin-top: 40px;
+      }
+    }
+    .room_info_amenities {
+      width: 100%;
+      padding: 60px;
+      background-color: #efefef;
+      border-radius: 20px;
+      margin-top: 80px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        &::after{
+          content :"";
+          display: block;
+          border-bottom: 1px solid black ;
+          height: 2px;
+          border-radius: 1px;
+          margin-top: 32px;
+        }
+      }
+      
+      .icon_box {
+        width: calc(100% - 280px);
+        display: flex;
+        justify-content: space-between;
+        padding-top: 48px;
+
+        .vector_icon {
+          width: 40px;
+          height: 64px;
+
+          p {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding-top: 4px;
+            // font-weight: lighter;
+          }
+        }
+
+        .vector_icon:nth-child(2) {
+          @include vectoricon(82px, 64px){
+            font-size: 14px;
+          }
+        }
+
+        .vector_icon:nth-child(3) {
+          @include vectoricon(60px, 64px)
+        }
+
+        .vector_icon:nth-child(4) {
+          @include vectoricon(65px, 61px){
+            font-size: 14px;
+          }
+        }
+
+        .vector_icon:nth-child(5) {
+          @include vectoricon(40px, 64px);
+        }
+
+        .vector_icon:nth-child(6) {
+          @include vectoricon(60px, 64p);
+        }
+
+        .vector_icon:nth-child(7) {
+          @include vectoricon(46px, 64px);
+        }
+
+        .vector_icon:nth-child(8) {
+          @include vectoricon(46px, 64px);
+        }
+
+        .vector_icon:nth-child(9) {
+          @include vectoricon(48px, 64px);
+
+        }
+      }
+    }
+  }
+
+  .caution {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    border-radius: 20px;
+    margin-top: 16px;
+    padding: 60px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .text_flexbox {
+      display: flex;
+      white-space: nowrap;
+      justify-content: space-between;
+      margin-top: 24px;
+      width: 100%;
+
+      p {
+        font-size: 20px;
+
+        b {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      p:nth-child(2) {
+        font-size: 20px;
+        margin-top: 12px;
+
+        b {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      li{
+        p:nth-child(2) {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+
+@import "./_res-sub2"

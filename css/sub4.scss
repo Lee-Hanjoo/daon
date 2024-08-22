@@ -1,0 +1,100 @@
+@import "./_res-sub4";
+.around_spot{
+    img{
+        vertical-align: middle;
+    }
+    .sub_top{
+        background-image: url("../img/img_sub4_tops.jpg");
+    }
+    .sub_container{
+        .contents{
+            .sub4_card{
+                opacity: 0;
+                transition: 1.2s;
+                transform: translateY(5%);
+                &.active{
+                    opacity: 1;
+                    transform: translateX(0%);
+                }
+                &:not(:last-of-type){
+                    margin-bottom: 72px;
+                }
+                .card_name{
+                    display: flex;
+                    strong{
+                        margin-right: 4px;
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                    .card_name_eng{
+                        display: flex;
+                        align-items: center;
+                    }                    
+                    p{
+                        margin-right: 8px;
+                        font-size: 24px;
+                    }
+                }
+                .card_img{
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    .imgbox{
+                        width: 50%;
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+                }
+                .card_txt{
+                    border: 1px solid #efefef;
+                    border-radius: 20px;
+                    .txt_short{
+                        padding: 24px 32px;
+                        display: flex;
+                        li{
+                            &:not(:last-of-type){
+                                margin-right: 32px;
+                            }
+                            text-align: center;
+                            display: flex;
+                            align-items: center;              
+                            &::before{
+                                content: '';
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 8px;
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                            &:nth-of-type(1){
+                                &::before{
+                                    background-image: url("../img/icon/icon_car_black.svg");
+                                }
+                            }
+                            &:nth-of-type(2){
+                                &::before{
+                                    background-image: url("../img/icon/icon_location.svg");
+                                }
+                            }
+                            &:nth-of-type(3){
+                                &::before{
+                                    background-image: url("../img/icon/icon_tel.svg");
+                                }
+                            }
+                        }
+                    }            
+                    .txt_long{
+                        p{
+                            padding: 40px 120px 40px 32px;
+                            border-top: 1px solid #efefef;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+.policy_service .sub_top {
+  background: url("../img/img_sub_policy.jpg") no-repeat center/cover;
+}
+.policy_service .sub_top .dim {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.policy_service .sub_container .contents {
+  width: 100%;
+}
+.policy_service .sub_container .contents .service_wrap {
+  width: 100%;
+}
+.policy_service .sub_container .contents .service_wrap .service_article .service_article_tit {
+  margin-bottom: 16px;
+}
+.policy_service .sub_container .contents .service_wrap .service_article .service_article_tit h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+.policy_service .sub_container .contents .service_wrap .service_article_txt {
+  margin: 16px 36px 32px;
+}
+.policy_service .sub_container .contents .service_wrap .service_article_txt ul {
+  padding: 16px;
+  border: 1px solid #AFAFAF;
+}
+.policy_service .sub_container .contents .service_wrap .service_article_txt ul li {
+  font-size: 16px;
+  color: #2f2f2f;
+}
+
+.policy_privacy .sub_top {
+  background: url("../img/img_sub_policy.jpg") no-repeat center/cover;
+}
+.policy_privacy .sub_top .dim {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2F2F2F;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table {
+  width: 100%;
+  border: 1px solid #2F2F2F;
+  padding: 24px;
+  margin: 24px 0 36px;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li {
+  width: 280px;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li a {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding: 3px 0;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_info {
+  margin-top: 16px;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_info article h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2F2F2F;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont {
+  margin: 18px 0;
+  padding: 0 8px;
+  border-bottom: 1px dotted #AFAFAF;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont ul li {
+  padding-bottom: 18px;
+}
+.policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont ul li p {
+  font-size: 18px;
+  color: #2F2F2F;
+}
+
+@media (max-width: 1279px) {
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit {
+    margin-bottom: 12px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit h3 {
+    font-size: 18px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt ul {
+    padding: 12px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article h3 {
+    font-size: 18px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul {
+    gap: 24px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li {
+    width: 240px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li a {
+    font-size: 16px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article h3 {
+    font-size: 18px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont ul li p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit {
+    margin-bottom: 4px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit h3 {
+    font-size: 16px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt {
+    margin: 12px 0 24px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt ul li {
+    font-size: 14px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article h3 {
+    font-size: 16px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table {
+    padding: 16px;
+    margin: 16px 0 24px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul {
+    gap: 8px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li {
+    width: 192px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info {
+    margin-top: 16px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article h3 {
+    font-size: 16px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont {
+    margin: 12px 0;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont ul li {
+    padding-bottom: 18px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_info article .privacy_info_cont ul li p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 479px) {
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit {
+    margin-bottom: 0px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article .service_article_tit h3 {
+    font-size: 14px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt {
+    margin: 8px 0 16px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt ul {
+    padding: 8px;
+  }
+  .policy_service .sub_container .contents .service_wrap .service_article_txt ul li {
+    font-size: 12px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table {
+    padding: 8px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul {
+    gap: 4px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li {
+    width: 120px;
+  }
+  .policy_privacy .sub_container .contents .privacy_wrap .privacy_chapter article .privacy_chapter_table ul li a {
+    font-size: 14px;
+  }
+}

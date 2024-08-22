@@ -1,0 +1,144 @@
+
+@import "_res";
+
+//=================================rooftop====================================
+//==================작업자: 허다영=========================================
+
+// pc 1500px
+
+@include res("pc-s") {
+  .facilities_common {
+    .sub_container {
+      .sub3_contents {
+        .facilities_img {
+          width: 60%;
+        }
+        .facilities_title {
+          width: 38%;
+          padding-left: 20px;
+          .facilities_bt a {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 1279
+@include res("tab") {
+  .facilities_common {
+    .sub_container {
+      .sub3_contents {
+        // margin: 64px 0;
+        .facilities_img {
+          width: 54%;
+        }
+        .facilities_title {
+          width: 44%;
+        }
+      }
+    }
+  }
+}
+
+// with 1210px
+@media (max-width: 1024px) {
+  .facilities_common {
+    .sub_container {
+      .sub3_contents {
+        gap: 10px;
+        // margin: 64px 0;
+        .facilities_img {
+          width: 54%;
+        }
+        .facilities_title {
+          width: 44%;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+  
+@media (max-width: 976px) {
+  .facilities_common {
+    .sub_container {
+      .contents {
+        .sub3_contents {
+          flex-direction: column;
+          align-items: center;
+          .facilities_img {
+            width: 100%;
+            height: auto;
+            .img {
+              position: relative;
+            }
+          }
+          .facilities_title {
+            width: 100%;
+            margin-top: 20px;
+            .facilities_t {
+              margin: 20px 0px 40px;
+            }
+            .facilities_s {
+              display: flex;
+              flex-grow: 1;
+              gap: 20px;
+              font-size: 18px;
+              padding: 80px 0 34px;
+              .facilities_s1 {
+                margin-bottom: 20px;
+                width: 100%;
+              }
+            }
+
+            .facilities_bt a {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// with 767
+
+@include res("mo-l") {
+}
+
+@media (max-width: 580px) {
+  .facilities_common {
+    .sub_container{
+      .sub3_contents{
+
+        .facilities_title{
+
+          .facilities_s {
+            display: flex;
+            flex-direction: column;
+      
+            gap: 20px;
+            font-size: 18px;
+            padding: 80px 0 34px;
+            .facilities_s1 {
+              margin-bottom: 20px;
+              width: 50%;
+            }
+          }
+          
+      
+        }
+
+        }
+
+      }
+
+
+  }
+}
+// with 480
+
+@include res("mo-s") {
+}

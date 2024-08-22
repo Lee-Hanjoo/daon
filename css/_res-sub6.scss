@@ -1,0 +1,456 @@
+@import "./_res";
+
+@include res('pc-s'){
+}
+
+@include res('tab'){
+    .reservation_common {
+        .sub_container {
+            .contents {
+                .step_wrap {
+                    .step {
+                        li {
+                            &:not(:last-of-type) {
+                                margin-right: 100px;
+                                .circle {
+                                    &::after {
+                                        width: 100px;
+                                        left: 62px;
+                                        top: 28px;
+                                    }
+                                }
+                            }
+                            .circle {
+                                width: 56px;
+                                height: 56px;
+                                border-width: 6px;
+                                span {
+                                    line-height: 44px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .step1 {
+        .sub_container {
+            .contents {
+                .data_area {
+                    .date_person {
+                        li{
+                            &:not(:first-of-type, .room) {
+                                margin-left: 64px;
+                            }
+                            .label {
+                                font-size: 20px;
+                                margin-bottom: 12px;
+                            }
+                            .input_wrap {
+                                input {
+                                    width: 100px;
+                                }
+                                .btn_wrap {
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                    .room_list_wrap {
+                        li {
+                            .room_info {
+                                ul {
+                                    padding: 32px;
+                                    li {
+                                        &:not(:first-of-type) {
+                                            margin-top: 16px;
+                                        }
+                                    }
+                                }
+                                .room_btn_wrap {
+                                    right: 0;
+                                    bottom:auto;
+                                    top: 2px;
+                                    .room_select_btn {
+                                        padding: 8px 16px;
+                                    }
+                                }
+                                .room_name {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .step2 {
+        .sub_container {
+            .contents {
+                .info_wrap {
+                    .right {
+                        .sticky_menu {
+                            .data_list {
+                                padding: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .step3 {
+        .sub_container {
+            .contents {
+                .complete {
+                    .txt_wrap {
+                        p {
+                            strong {
+                                font-size: 28px;
+                                span {
+                                    margin-top: 12px;
+                                    margin-bottom: 40px;
+                                    font-size: 20px;
+                                }
+                            }
+                            > span {
+                                font-size: 20px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1088px) {
+    .step1 {
+        .sub_container {
+            .contents {
+                .data_area {
+                    .room_list_wrap {
+                        > li {
+                            flex-direction: column;
+                            .room_img {
+                                width: 100%;
+                                height: auto;
+                                margin-right: 0;
+                                margin-bottom: 20px;
+                            }
+                            .room_info {
+                                width: 100%;
+                                .room_btn_wrap {
+                                    top:auto;
+                                    right: 32px;
+                                    bottom: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .step2 {
+        position: relative;
+        .sub_container {
+            padding-bottom: 0;
+            .contents {
+                .info_wrap {
+                    .left {
+                        width: 100%;
+                    }
+                    .right {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .right_mb_menu {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 20px 80px;
+            position: sticky;
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            border-top: 1px solid #efefef;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 99;
+            > div {
+                width: 200px;
+                &:first-of-type {
+                    width: calc(100% - 224px);
+                    max-width: 320px;
+                }
+            }
+            .payment_btn_wrap {
+                border: none;
+                justify-content: flex-end;
+                .payment_btn {
+                    width: 100px;
+                    padding: 12px 0;
+                    font-size: 14px;
+                    border: 1px solid #2f2f2f;
+                    &:first-of-type {
+                        border-radius: 8px 0 0 8px;
+                    }
+                }
+            }
+        }
+        .right_mb_info {
+            display: block;
+            width: calc(100% + 160px);
+            margin: 80px 0 0 -80px;
+            padding: 40px 80px;
+            border-top: 8px solid #efefef;
+            .data_list {
+                padding: 0;
+                margin-bottom: 0;
+                box-shadow: none;
+                border: none;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &:not(:first-of-type) {
+                        margin-top: 8px;
+                    }
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .label {
+                        margin-bottom: 0;
+                    }
+                    .data {
+                        .room {
+                            margin-left: 12px;
+                            color: #afafaf;
+                        }
+                        #tag {
+                            padding: 6px 10px;
+                            border-radius: 4px;
+                            font-size: 10px;
+                        }
+                        .room_tag_num {
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+        .price_wrap {
+            display: block;
+            margin-bottom: 0;
+            .price {
+                text-align: left;
+                > p {
+                    font-size: 24px;
+                    &::before {
+                        width: 24px;
+                        height: 24px;
+                        background-size: 24px;
+                    }
+                }
+            }
+            > p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .step1 {
+        .sub_container {
+            .contents {
+                .data_area {
+                    .date_person {
+                        li{
+                            &:not(:first-of-type, .room) {
+                                margin-left: 24px;
+                            }
+                            .label {
+                                margin-bottom: 8px;
+                            }
+                            .input_wrap {
+                                input {
+                                    font-size: 20px;
+                                }
+                                .date {
+                                    width: 140px;
+                                    & + .sign {
+                                        font-size: 20px;
+                                        margin: 0 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:863px) {
+    .step1 {
+        .sub_container {
+            .contents {
+                .data_area {
+                    .date_person {
+                        height: 248px;
+                        flex-direction: column;
+                        position: relative;
+                        margin: 64px 0;
+                        padding: 40px 0;
+                        li {
+                            margin-left: 0 !important;
+                            .input_wrap {
+                                input {
+                                    width: 88px;
+                                }
+                                .btn_wrap {
+                                    width: 88px;
+                                }
+                            }
+                            &.data {
+                                width: 100%;
+                            }
+                            &:not(.data) {
+                                width: 88px;
+                                position: absolute;
+                                left: 0;
+                                bottom: 40px;
+                            }
+                            &:nth-last-of-type(2) {
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            &:nth-last-of-type(1) {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res('mo-l'){
+    .step2 {
+        .right_mb_info {
+            width: calc(100% + 32px);
+            margin-left: -16px;
+            padding: 40px 16px;
+        }
+        .right_mb_menu {
+            padding: 20px 16px;
+        }
+        .price_wrap {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:683px) {
+    .step2 {
+        .sub_container {
+            .contents {
+                .info_wrap {
+                    .left {
+                        .user_info {
+                            .input_list {
+                                li {
+                                    width: 100%;
+                                    &.half {
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        > div {
+                                            width: 100%;
+                                            &:last-of-type {
+                                                width: 100% !important;
+                                                margin-top: 24px;
+                                                margin-left: 0 !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .step3 {
+        .sub_container {
+            .contents {
+                .complete {
+                    .btn_wrap {
+                        button {
+                            width: calc(50% - 8px);
+                            &.reservation {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:529px) {
+    .step1 {
+        .sub_container {
+            .contents {
+                .data_area {
+                    .room_list_wrap {
+                        li {
+                            .room_info {
+                                .room_btn_wrap {
+                                    right: 0;
+                                    bottom:auto;
+                                    top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .look {
+        .sub_container {
+            .contents {
+                .btn_wrap {
+                    font-size: 0;
+                    button {
+                        width: calc(50% - 4px);
+                        &:last-of-type {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include res('mo-s'){
+}

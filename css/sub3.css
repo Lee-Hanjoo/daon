@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.pool .sub_top {
+  background-image: url("../img/img_facilities_pool_0.jpg");
+}
+
+.facilities_common .sub_top {
+  background-image: url("../img/img_facilities_rooftop_0.jpg");
+}
+.facilities_common .sub_container .contents .sub3_contents {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.facilities_common .sub_container .contents .sub3_contents .swiper .swiper-pagination {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.facilities_common .sub_container .contents .sub3_contents .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #2f2f2f;
+}
+.facilities_common .sub_container .contents .sub3_contents .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #efefef;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img {
+  width: 66%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a {
+  flex-shrink: 0;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a img .img:nth-last-of-type(1) {
+  position: absolute;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a img .img:nth-last-of-type(2) {
+  position: absolute;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a img .img:nth-last-of-type(3) {
+  position: absolute;
+}
+.facilities_common .sub_container .contents .sub3_contents .facilities_img a img .img:nth-last-of-type(4) {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.facilities_common .sub_container .facilities_title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.facilities_common .sub_container .facilities_title .facilities_t p:nth-of-type(1) {
+  width: 88px;
+  height: 32px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: #ddef73;
+  border-radius: 8px;
+  text-align: center;
+}
+.facilities_common .sub_container .facilities_title .facilities_t p:nth-of-type(2) {
+  font-size: 40px;
+  margin: 12px 0px;
+  font-weight: 600;
+}
+.facilities_common .sub_container .facilities_title .facilities_t p:nth-of-type(3) {
+  font-size: 20px;
+  margin: 24 0px;
+}
+.facilities_common .sub_container .facilities_title .facilities_s {
+  margin-top: auto;
+  font-size: 20px;
+}
+.facilities_common .sub_container .facilities_title .facilities_s .facilities_s1 {
+  padding: 32px 32px 32px;
+  margin: 0 0 12px;
+  background-color: #efefef;
+  border-radius: 20px;
+}
+.facilities_common .sub_container .facilities_title .facilities_s .facilities_s1 dt {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.facilities_common .sub_container .facilities_title .facilities_s .facilities_s1 dt::before {
+  content: "●";
+  font-size: 0.5rem;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.facilities_common .sub_container .facilities_title .facilities_bt a {
+  border: 2px solid #2f2f2f;
+  padding: 16px 26px 14px;
+  border-radius: 40px;
+  display: inline-block;
+  margin: 4px;
+}
+.facilities_common .sub_container .facilities_title .facilities_bt a::after {
+  content: url(../img/icon/icon_facilities_arrow.svg);
+  display: none;
+  vertical-align: middle;
+  padding-left: 8px;
+}
+.facilities_common .sub_container .facilities_title .facilities_bt a.active {
+  background-color: #2f2f2f;
+  color: white;
+  transition: 1s;
+}
+.facilities_common .sub_container .facilities_title .facilities_bt a.active::after {
+  display: inline-block;
+}
+
+.bbq .sub_top {
+  background-image: url("../img/img_facilities_bbq_0.jpg");
+}
+
+@media (max-width: 1499px) {
+  .facilities_common .sub_container .sub3_contents .facilities_img {
+    width: 60%;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_title {
+    width: 38%;
+    padding-left: 20px;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_title .facilities_bt a {
+    width: 50%;
+  }
+}
+@media (max-width: 1279px) {
+  .facilities_common .sub_container .sub3_contents .facilities_img {
+    width: 54%;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_title {
+    width: 44%;
+  }
+}
+@media (max-width: 1024px) {
+  .facilities_common .sub_container .sub3_contents {
+    gap: 10px;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_img {
+    width: 54%;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_title {
+    width: 44%;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 976px) {
+  .facilities_common .sub_container .contents .sub3_contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_img {
+    width: 100%;
+    height: auto;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_img .img {
+    position: relative;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_title {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_title .facilities_t {
+    margin: 20px 0px 40px;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_title .facilities_s {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    font-size: 18px;
+    padding: 80px 0 34px;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_title .facilities_s .facilities_s1 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .facilities_common .sub_container .contents .sub3_contents .facilities_title .facilities_bt a {
+    width: auto;
+  }
+}
+@media (max-width: 580px) {
+  .facilities_common .sub_container .sub3_contents .facilities_title .facilities_s {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    padding: 80px 0 34px;
+  }
+  .facilities_common .sub_container .sub3_contents .facilities_title .facilities_s .facilities_s1 {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}

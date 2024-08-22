@@ -1,0 +1,838 @@
+/*============================intro start=================================*/
+.intro_footer {
+  margin-top: 0;
+}
+
+.intro .sub_top {
+  background: url("../img/img_sub_intro.jpg") no-repeat center/cover;
+}
+.intro .sub_top .dim {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+.intro .sub_container.sub_container_full {
+  max-width: 100%;
+  padding: 140px 0 0;
+}
+.intro .sub_container .contents {
+  width: 100%;
+}
+.intro .sub_container .contents .intro_fadein {
+  animation: fadeIn 1200ms;
+}
+.intro .sub_container .contents .intro_grid_wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: "a b c" "a d d";
+}
+.intro .sub_container .contents .intro_grid_wrapper p {
+  position: relative;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+  height: 640px;
+  grid-area: a;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+  height: 250px;
+  grid-area: b;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+  -o-object-position: 0px -360px;
+     object-position: 0px -360px;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+  height: 250px;
+  grid-area: c;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+  height: 370px;
+  grid-area: d;
+}
+.intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+  -o-object-position: 0px -190px;
+     object-position: 0px -190px;
+}
+.intro .sub_container .contents .intro_grid_wrapper p img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.intro .sub_container .contents .intro_txt {
+  width: 847px;
+  margin: 80px auto;
+  color: #2F2F2F;
+}
+.intro .sub_container .contents .intro_txt h5 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 40px;
+}
+.intro .sub_container .contents .intro_full_bg {
+  width: 100%;
+  height: 777px;
+  margin: 0 auto;
+  margin-top: 160px;
+  position: relative;
+  z-index: 2;
+}
+.intro .sub_container .contents .intro_full_bg::after {
+  width: 70%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 17.5%;
+  top: 0;
+  background: url("../img/img_intro_full.jpg") 60% 75% no-repeat;
+  z-index: -2;
+}
+.intro .sub_container .contents .intro_full_bg::before {
+  width: 70%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 17.5%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.44);
+  z-index: -1;
+}
+.intro .sub_container .contents .intro_full_bg.intro_expand::after, .intro .sub_container .contents .intro_full_bg.intro_expand::before {
+  animation: expand 1850ms ease-out forwards;
+}
+.intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+  width: 720px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .logo {
+  margin: 0 auto;
+}
+.intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt {
+  margin: 40px auto;
+}
+.intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*============================intro end=================================*/
+/*============================contact start=================================*/
+.contact .sub_top {
+  background: url("../img/img_sub_contact.jpg") no-repeat center/cover;
+}
+.contact .sub_top .dim {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.contact .sub_container .contents {
+  width: 100%;
+}
+.contact .sub_container .contents .contact_map {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  border-radius: 20px;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn button {
+  height: 42px;
+  background-color: #2F2F2F;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn button i {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn button i img {
+  width: 19px;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn button a {
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 12px;
+  margin-left: 20px;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn .contact_map_naver_btn {
+  width: 155px;
+}
+.contact .sub_container .contents .contact_map .contact_map_btn .contact_map_google_btn {
+  width: 138px;
+}
+.contact .sub_container .contents .contact_infomation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .sub_container .contents .contact_infomation .contact_info {
+  width: 50%;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(1)::before {
+  background: url("../img/icon/icon_location.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(2)::before {
+  background: url("../img/icon/icon_tel.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(3)::before {
+  background: url("../img/icon/icon_mail.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(1)::before {
+  background: url("../img/icon/icon_metro.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(2)::before {
+  background: url("../img/icon/icon_bus.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li::after {
+  width: 0;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li i {
+  width: 40px;
+  line-height: 0;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 12px;
+  line-height: 20px;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li div {
+  width: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li div span {
+  width: 4px;
+  height: 4px;
+  content: "";
+  background-color: #afafaf;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li {
+  width: 200%;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(1)::before {
+  background: url("../img/icon/icon_location.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(2)::before {
+  background: url("../img/icon/icon_check.svg") no-repeat center;
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit {
+  margin-top: 40px;
+  padding-left: 8px;
+  position: relative;
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit::before {
+  width: 4px;
+  height: 18px;
+  background-color: #357EF1;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  content: "";
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit h3 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  color: #2F2F2F;
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li {
+  height: 100px;
+  font-size: 16px;
+  color: #2F2F2F;
+  position: relative;
+  padding: 28px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 2px solid #efefef;
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li b {
+  font-weight: 700;
+  display: inline-block;
+}
+.contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::before {
+  width: 32px;
+  height: 32px;
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/*============================contact end=================================*/
+@media (max-width: 1499px) {
+  .intro .sub_container .contents .intro_grid_wrapper {
+    grid-gap: 15px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 580px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 220px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -294px;
+       object-position: 0px -294px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 220px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 345px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+    -o-object-position: 0px -150px;
+       object-position: 0px -150px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 795px;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 660px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt {
+    margin: 32px auto;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .intro .sub_container .contents .intro_grid_wrapper {
+    width: calc(100% - 160px);
+  }
+}
+@media (max-width: 1279px) {
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 540px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -200px;
+       object-position: 0px -200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 325px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+    -o-object-position: 0px -26px;
+       object-position: 0px -26px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 717px;
+    margin: 60px auto;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    font-size: 20px;
+  }
+  .intro .sub_container .contents .intro_full_bg {
+    margin-top: 100px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 597px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt {
+    margin: 28px auto;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .contact .sub_container .contents .contact_map {
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn {
+    right: 16px;
+    bottom: 16px;
+    gap: 8px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button {
+    height: 38px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i {
+    top: 6px;
+    left: 9px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i img {
+    width: 15px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button a {
+    font-size: 14px;
+    padding: 7px 4px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn .contact_map_naver_btn {
+    width: 130px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn .contact_map_google_btn {
+    width: 118px;
+  }
+  .contact .sub_container .contents .contact_infomation {
+    margin: 0 auto;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li i {
+    width: 34px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p {
+    font-size: 14px;
+    padding-right: 2px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p::after {
+    width: 14px;
+    height: 14px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li div span {
+    margin: 3px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit {
+    margin-top: 24px;
+    padding-left: 6px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit h3 {
+    font-size: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit::before {
+    height: 16px;
+    top: 6px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt {
+    margin-top: 16px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li {
+    font-size: 14px;
+    padding: 16px;
+    gap: 4px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::before {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::after {
+    width: 195%;
+    left: 5px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .intro .sub_container .contents .intro_grid_wrapper {
+    grid-gap: 10px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 500px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 180px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -125px;
+       object-position: 0px -125px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 180px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 310px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+    -o-object-position: 0;
+       object-position: 0;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 630px;
+    margin: 40px auto;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .intro .sub_container .contents .intro_full_bg {
+    margin-top: 80px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 530px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt {
+    margin: 24px auto;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(3)::before {
+    background-size: 24px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p {
+    font-size: 12px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li div span {
+    width: 3px;
+    height: 3px;
+    margin: 2px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(3)::before {
+    background-size: 22px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(3)::before {
+    background-size: 24px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li {
+    padding: 0;
+    gap: 0;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::before {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 480px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 170px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -90px;
+       object-position: 0px -90px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 170px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 566px;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    font-size: 16px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 469px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .intro .sub_container .contents .intro_grid_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -497px;
+       object-position: 0px -497px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 300px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+    -o-object-position: 0px -44px;
+       object-position: 0px -44px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p img {
+    border-radius: 8px;
+  }
+  .intro .sub_container .contents .intro_full_bg {
+    margin-top: 60px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .logo img {
+    width: 80%;
+  }
+  .contact .sub_container .contents .contact_map {
+    height: 280px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn {
+    right: 12px;
+    bottom: 16px;
+    gap: 8px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button {
+    height: 30px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i {
+    top: 2px;
+    left: 4px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i img {
+    width: 13px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button a {
+    font-size: 12px;
+    padding: 5px 4px;
+    margin-left: 14px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn .contact_map_naver_btn {
+    width: 108px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn .contact_map_google_btn {
+    width: 96px;
+  }
+  .contact .sub_container .contents .contact_infomation {
+    flex-direction: column;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info {
+    width: 100%;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(3)::before {
+    background-size: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p {
+    font-size: 14px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p::after {
+    width: 12px;
+    height: 12px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(3)::before {
+    background-size: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(3) {
+    display: none;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li {
+    width: 100%;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(3)::before {
+    background-size: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit h3 {
+    font-size: 24px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit::before {
+    top: 9px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li {
+    height: 80px;
+    gap: 4px;
+    padding-left: 8px;
+    border-bottom: 1px solid #efefef;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li b {
+    font-size: 14px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::before {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .intro .sub_container.sub_container_full .title {
+    padding: 0 16px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p {
+    height: 240px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -416px;
+       object-position: 0px -416px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 200px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 393px;
+    margin: 36px auto;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 345px;
+  }
+}
+@media (max-width: 479px) {
+  .intro .sub_container .contents .intro_grid_wrapper {
+    gap: 4px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p {
+    height: 150px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(1) {
+    height: 150px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) {
+    height: 150px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -359px;
+       object-position: 0px -359px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(3) {
+    height: 150px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) {
+    height: 150px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 319px;
+    margin: 24px auto;
+  }
+  .intro .sub_container .contents .intro_txt h5 {
+    line-height: 30px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .logo img {
+    width: 70%;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner .intro_full_bg_inner_txt h5 {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn {
+    right: 8px;
+    bottom: 12px;
+    gap: 4px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button {
+    height: 28px;
+    border-radius: 4px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i {
+    top: 1px;
+    left: 8px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button i img {
+    width: 12px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn button a {
+    font-size: 10px;
+    padding: 0;
+    margin-left: 13px;
+  }
+  .contact .sub_container .contents .contact_map .contact_map_btn .contact_map_naver_btn {
+    width: 100px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info1 .contact_info_txt li:nth-child(3)::before {
+    background-size: 16px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt {
+    margin-top: 8px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li p {
+    font-size: 12px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info2 .contact_info_txt li:nth-child(3)::before {
+    background-size: 16px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(1)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(2)::before, .contact .sub_container .contents .contact_infomation .contact_info.contact_info3 .contact_info_txt li:nth-child(3)::before {
+    background-size: 16px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit {
+    margin-top: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit h3 {
+    font-size: 20px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_tit::before {
+    top: 6px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li {
+    height: 56px;
+    font-size: 12px;
+    padding: 8px;
+    gap: 0;
+    padding-left: 4px;
+  }
+  .contact .sub_container .contents .contact_infomation .contact_info .contact_info_txt li::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(2) img {
+    -o-object-position: 0px -230px;
+       object-position: 0px -230px;
+  }
+  .intro .sub_container .contents .intro_grid_wrapper p:nth-child(4) img {
+    -o-object-position: 0px -5px;
+       object-position: 0px -5px;
+  }
+  .intro .sub_container .contents .intro_txt {
+    width: 260px;
+  }
+  .intro .sub_container .contents .intro_full_bg .intro_full_bg_inner {
+    width: 283px;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes expand {
+  100% {
+    width: 100%;
+    left: 0%;
+  }
+}

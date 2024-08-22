@@ -1,0 +1,231 @@
+@import "./_res";
+
+
+// .sub .contents .main_box .all_text li
+@media (min-width : 1500px){
+  .sub{
+    .contents{
+      .main_box{
+        .all_text{
+          width: calc(100% - 1000px);
+        }
+      }
+    }
+  }
+}
+//max 1500
+@include res('pc-s') {
+  .sub {
+    .contents {
+      .main_box {
+        .room_content {
+          .main_box2 {
+            .room_list {
+              width: calc(100% - 600px);
+              height: 100%;
+            }
+          }
+        }
+
+        .all_text {
+          width: calc(100% - 780px);
+          margin-top: 80px;
+        }
+      }
+
+      .caution {
+        .text_flexbox {
+          p {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// 0~1398 (틀어짐)
+@media (max-width : 1398px) {
+  .sub {
+    .contents {
+      .main_box {
+        .room_content {
+          .main_box2 {
+            .room_list {
+              width: calc(100% - 500px);
+            }
+          }
+        }
+
+        .all_text {
+          width: calc(100% - 680px)
+        }
+      }
+
+      .caution {
+        .text_flexbox {
+          display: block;
+
+          p {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//  max 1279
+@include res('tab') {
+  .sub {
+    .contents {
+      .main_box {
+        .room_content {
+          .main_box2 {
+            .room_list {
+              width: calc(100% - 370px);
+            }
+          }
+        }
+
+        .all_text {
+          width: calc(100% - 600px);
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+//max 0~1066 (틀어짐)
+@media (min-width:480px) and (max-width:1066px) {
+  .sub {
+    .contents {
+      .main_box {
+        .room_content {
+          .main_box2 {
+            flex-wrap: wrap;
+            .room_list {
+              width: 100%;
+            }
+          }
+        }
+        .all_text {
+          width: 100%;
+          padding: 30px;
+          margin: 0;
+          li {
+            &:last-of-type {
+              display: block;
+              button {
+                margin: 0;
+                padding: 40px;
+                float: right;
+                position: relative;
+                bottom: 140px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .room_info_amenities {
+        .icon_box {
+          width: 100%;
+          gap: 40px;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        }
+      }
+      .caution {
+        .text_flexbox {
+          display: block;
+          white-space: normal;
+          p {
+            font-size: 16px;
+            b {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// max 767 변경사항 없음
+
+@include res('mo-l') {}
+
+
+//640 버튼 틀어짐
+//.sub .contents .main_box .all_text li:last-of-type button 
+@media (min-width : 480px) and (max-width : 640px) {
+  .sub{
+    .contents{
+      .main_box{
+        .all_text{
+          li:last-of-type {
+            button {
+              padding: 17px 46px;
+              font-size: 16px;
+              float: none;
+              bottom: 0;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// max 480
+@include res('mo-s') {
+  .sub {
+    .contents {
+      .main_box {
+        .room_content {
+          .main_box2 {
+            flex-wrap: wrap;
+
+            .room_list {
+              width: 100%;
+            }
+          }
+        }
+        .all_text {
+          width: 100%;
+          margin: 30px;
+        }
+      }
+      .room_info_amenities {
+        height: 350px;
+        padding: 30px;
+
+        .icon_box {
+          width: 100%;
+          gap: 30px;
+          flex-wrap: wrap;
+        }
+      }
+      .caution {
+        padding: 30px;
+        .text_flexbox {
+          white-space: normal;
+          p {
+            font-size: 16px;
+            margin-top: 8px;
+            b {
+              font-size: 16px;
+            }
+          }
+          p,b {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

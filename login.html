@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
+    <!-- [↓] sns 로그인 -->
+        <!-- 카카오 -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
+    <script>Kakao.init('f585b1797615499ab112a287f601e011');</script>
+        <!-- 네이버 -->
+    <script src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- 구글 -->
+    <script defer src="https://accounts.google.com/gsi/client"></script>
+    <!-- [↓] 페이지에 맞는 css, script 불러오기 -->
+    <link rel="stylesheet" href="./css/login.css"><script src="./js/common.js"></script>
+    <script defer src="./js/login.js"></script>
+</head>
+<body>
+    <!-- 컨텐츠 -->
+    <div class="login_common login">
+        <div class="logo_wrap">
+            <h1 class="logo">
+                <a href="./index.html"></a>
+            </h1>
+            <h2 class="txt">
+                다온펜션에 오신 것을 환영합니다.
+            </h2>
+        </div>
+        <div class="login_wrap">
+                <div class="login_daon">
+                    <form>
+                        <div class="login_login_daon">
+                            <ul class="input_box">
+                                <li class="email_box">
+                                    <label for="email"></label>
+                                    <input id="email" type="email" autocomplete="current-password" name="email" placeholder="이메일" required>
+                                    <button type="button" class="input_reset_btn input_btn"></button>
+                                    <p class="error_msg"></p>
+                                </li>
+                                <li class="pw_box">
+                                    <label for="password"></label>
+                                    <input id="password" type="password" autocomplete="current-password" name="password" placeholder="비밀번호 (영문/숫자/특문 조합 8~15자)" minlength="8" maxlength="15" required>
+                                    <button type="button" class="input_eye_btn input_btn"></button>
+                                    <button type="button" class="input_reset_btn input_btn"></button>
+                                    <p class="error_msg"></p>
+                                </li>
+                            </ul>
+                            <a href="./index.html">
+                                <button type="submit" class="blue_btn">로그인</button>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="login_join_daon">
+                        <a href="./join.html">
+                            <button type="button" class="white_btn">회원가입</button>
+                        </a>
+                    </div>
+                </div>          
+                <div class="login_sns">
+                    <ul class="login_login_sns">
+                        <li>
+                            <a href="#">
+                                <button type="button" class="kakao"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="naver_id_login">
+                                <button type="button" class="naver"></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button type="button" class="google"></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer class="footer">
+        Copyright@ 2015 다온펜션 All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAON 리뉴얼</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!-- [↓] swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/common.js"></script>
+</head>
+<style>
+    .template {
+        padding-top: 352px;
+        button[name="pop_btn"] {
+            padding: 20px;
+            border: 1px solid #000;
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+            border-radius: 8px;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+</style>
+<body>
+    <main class="template">
+        <div>
+            <h2>[1] 탭 (박스)</h2>
+            <ul class="tab box">
+                <li class="on">
+                    위치안내
+                </li>
+                <li>대중교통</li>
+            </ul>
+            <div class="tab_cont">
+                <div class="on">contents1</div>
+                <div>contents2</div>
+            </div>
+        </div>
+        <div>
+            <h2>[2] 탭 (라인)</h2>
+            <ul class="tab line">
+                <li class="on"><a href="#">LOVE YOU</a></li>
+                <li><a href="#">ONLY YOU</a></li>
+            </ul>
+            <div class="tab_cont">
+                <div class="on">contents1</div>
+                <div>contents2</div>
+            </div>
+        </div>
+        <div>
+            <h2>[3] 페이지네이션</h2>
+            <ul class="pagination">
+                <li class="double_prev">
+                    <a href="#"></a>
+                </li>
+                <li class="prev">
+                    <a href="#"></a>
+                </li>
+                <li class="on">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li class="next active">
+                    <a href="#"></a>
+                </li>
+                <li class="double_next active">
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>[4] 체크박스</h2>
+            <div class="checkbox_wrap">
+                <div class="all">
+                    <input type="checkbox" class="checkbox" id="all_chk">
+                    <label for="all_chk"><i></i>전체동의</label>
+                    <button type="button" class="toggle_btn"></button>
+                </div>
+                <div class="checkbox_cont">
+                    <input type="checkbox" class="checkbox" id="chk1" name="chk">
+                    <label for="chk1"><i></i>이용약관 및 취소규정 동의 (필수)</label>
+                    <input type="checkbox" class="checkbox" id="chk2" name="chk">
+                    <label for="chk2"><i></i>개인정보 수집 및 이용 목적 동의 (필수)</label>
+                    <input type="checkbox" class="checkbox" id="chk3" name="chk">
+                    <label for="chk3"><i></i>할인 혜택 및 프로모션 안내 동의 (선택)</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>[5] 팝업</h2>
+            <!-- 기본 팝업 class="popup"에 해당 팝업 이름 넣어주고 그 클래스 이름으로 스타일 제어. 지금의 경우엔 .coupon 에서 스타일 제어중입니다. -->
+            <!-- 팝업을 열리게하는 클릭요소에 name="pop_btn"을 넣어줘야 js가 작동합니다. -->
+            <button type="button" name="pop_btn">팝업</button>
+            <div class="popup">
+                <div class="popup_cont">
+                    <div class="popup_top">
+                        <h3 class="popup_title">타이틀</h3>
+                        <button class="popup_close_btn"></button>
+                    </div>
+                    <div class="popup_inner">
+                        <!-- inner 안쪽에 팝업 내용 작업 -->
+                        컨텐츠 내용<br/>
+                        컨텐츠 내용<br/>
+                        컨텐츠 내용<br/>
+                        컨텐츠 내용<br/>
+                        컨텐츠 내용
+                    </div>
+                </div>
+            </div>
+            <!-- 쿠폰 팝업 -->
+            <div class="popup coupon">
+                <div class="popup_cont">
+                    <div class="popup_top">
+                        <h3 class="popup_title">쿠폰함</h3>
+                        <button class="popup_close_btn"></button>
+                    </div>
+                    <div class="popup_inner">
+                        <!-- inner 안쪽에 팝업 내용 작업 -->
+                        <div class="coupon_popup_cont_inner">
+                            <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_01">
+                                <div class="coupon_popup_cont_inner_coupon_tit">
+                                    <h2>10%</h2>
+                                    <h3>신규 고객 전용 쿠폰</h3>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon_txt">
+                                    <span>최대 20,000 적용</span>
+                                    <div class="coupon_popup_cont_inner_coupon_date">
+                                        <span class="coupon_popup_cont_inner_coupon_date_icon">D-7</span>
+                                        <span>2024. 06. 19까지</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_02">
+                                <div class="coupon_popup_cont_inner_coupon_tit">
+                                    <h2>5,000원</h2>
+                                    <h3>깜짝 할인 쿠폰</h3>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon_txt">
+                                    <span></span>
+                                    <div class="coupon_popup_cont_inner_coupon_date">
+                                        <span class="coupon_popup_cont_inner_coupon_date_icon">D-1</span>
+                                        <span>2024. 06. 13까지</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_03">
+                                <div class="coupon_popup_cont_inner_coupon_tit">
+                                    <h2>3,000원</h2>
+                                    <h3>귀여운 강아지를 위한 쿠폰</h3>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon_txt">
+                                    <span>강아지 용품 카테고리 한정</span>
+                                    <div class="coupon_popup_cont_inner_coupon_date">
+                                        <span class="coupon_popup_cont_inner_coupon_date_icon">D-5</span>
+                                        <span>2024. 06. 13까지</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="coupon_popup_cont_inner_coupon coupon_popup_cont_inner_coupon_04">
+                                <div class="coupon_popup_cont_inner_coupon_tit">
+                                    <h2>무료배달</h2>
+                                    <h3>자취러를 위한 무료배달 쿠폰</h3>
+                                </div>
+                                <div class="coupon_popup_cont_inner_coupon_txt">
+                                    <span>최대 20,000 적용</span>
+                                    <div class="coupon_popup_cont_inner_coupon_date">
+                                        <span class="coupon_popup_cont_inner_coupon_date_icon">D-7</span>
+                                        <span>2024. 06. 19까지</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 회원가입 팝업 -->
+            <div class="popup join">
+                <div class="popup_cont">
+                    <div class="popup_top">
+                        <button class="popup_close_btn"></button>
+                    </div>
+                    <div class="popup_inner">
+                        <div class="join_popup_tit">
+                            <h3 class="join_popup_title">잠시만요!</h3>
+                            <h5 class="join_popup_sub_title">아직 회원가입이 끝나지 않았어요.</h5>
+                        </div>
+                        <div class="join_popup_txt">
+                            <p>회원가입을 완료하고<br>
+                                다온의 특별한 혜택을 만나보세요.</p>
+                        </div>
+                    </div>
+                    <div class="popup_bottom_btn">
+                        <button class="join_popup_btn_progress"><a href="#">계속 진행</a></button>
+                        <button class="join_popup_btn_cancel"><a href="#">중단하기</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import"./res";
+
+
+//max 1500 변동 x
+@include res('pc-s'){}
+
+//max 1279
+@include res('tab'){
+  .align_box{
+    & li{
+      width: calc(50% - 10px);
+        }
+      }
+    }
+
+//max 767
+@include res('mo-l'){
+
+    .align_box{
+      & li{width: 100%;
+        a{
+          .img_box{
+            .end_event_text{
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
+}
+
+//max 480
+@include res('mo-s'){
+  .sub{
+    ul{
+      li{
+        a{
+          .img_box{
+            .end_event_text{
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
