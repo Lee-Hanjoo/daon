@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const session_profile = JSON.parse(sessionStorage.profile);
         mypage_email.value = session_profile.email;
         mypage_name.value = session_profile.name;
+        console.log(session_profile.name);
+        if(!session_profile.email){
+            mypage_email.value = 'hongyeong575@kakao.com';
+        }
     }
     catch{
         mypage_email.placeholder = "이메일";
@@ -49,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         mypage_room.innerText = "love 102호";
         mypage_person.innerText = "4";
     }
+
+    //const mypage_regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,15}$/;
 
     if(isLogin !== 'true') {
         const firstTab = document.querySelector(".mypage_tap_wrap > .tab > li:first-child")
